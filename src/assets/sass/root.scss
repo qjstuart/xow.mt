@@ -1271,6 +1271,9 @@
 /* Mobile */
 @media only screen and (min-width: 0rem) {
     #footer {
+
+        padding-block: 2rem;
+
         .section-footer {
             flex-flow: column;
             justify-content: center;
