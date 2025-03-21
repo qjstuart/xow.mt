@@ -262,7 +262,7 @@
     width: 100%;
     /* prevents padding from affecting height and width */
     box-sizing: border-box;
-    padding: 0.75rem 1rem;
+    padding: 0rem 1rem;
     /* remove the font family so the Stitch inherits the fonts from your global stylesheet */
     font-family: "MADE Okine Sans", "Arial", sans-serif;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -279,7 +279,7 @@
     justify-content: center;
     align-items: center;
     margin: 0 auto 0 0;
-    height: 100%;
+    height: 4.0625rem;
     max-width: 9.125rem;
     width: 40%;
     /* prevents padding from affecting height and width */
@@ -483,25 +483,6 @@
     width: 100%;
   }
 }
-/* Dark Mode */
-@media only screen and (max-width: 63.9375rem) {
-  body.dark-mode #cs-navigation {
-    background-color: var(--dark);
-  }
-  body.dark-mode #cs-navigation .cs-logo {
-    /* makes it white */
-    filter: grayscale(1) brightness(1000%);
-  }
-  body.dark-mode #cs-navigation .cs-line {
-    background-color: #fff;
-  }
-  body.dark-mode #cs-navigation .cs-ul-wrapper {
-    background-color: var(--medium);
-  }
-  body.dark-mode #cs-navigation .cs-li-link {
-    color: var(--bodyTextColorWhite);
-  }
-}
 /*-- -------------------------- -->
 <---     Navigation Dropdown    -->
 <--- -------------------------- -*/
@@ -694,19 +675,6 @@
     display: none;
   }
 }
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
-  body.dark-mode #cs-navigation .cs-drop-ul {
-    background-color: var(--dark);
-  }
-  body.dark-mode #cs-navigation .cs-li-link.cs-drop-link:hover {
-    background-color: var(--medium);
-  }
-  body.dark-mode #cs-navigation .cs-drop-icon {
-    /* turns it white */
-    filter: grayscale(1) brightness(1000%);
-  }
-}
 /*-- -------------------------- -->
 <---     Desktop Navigation     -->
 <--- -------------------------- -*/
@@ -749,8 +717,8 @@
     padding: 0;
   }
   #cs-navigation .cs-logo img {
-    height: 100%;
-    width: 100%;
+    height: 140%;
+    width: 140%;
     /* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
     object-fit: contain;
   }
@@ -798,22 +766,6 @@
   }
   #cs-navigation .cs-li-link.cs-active:before {
     width: 100%;
-  }
-}
-/* Dark Mode */
-@media only screen and (min-width: 64rem) {
-  body.dark-mode #cs-navigation {
-    background-color: var(--dark);
-  }
-  body.dark-mode #cs-navigation .cs-logo {
-    /* makes it turn white */
-    filter: grayscale(1) brightness(1000%);
-  }
-  body.dark-mode #cs-navigation .cs-li-link {
-    color: var(--bodyTextColorWhite);
-  }
-  body.dark-mode #cs-navigation .cs-li-link:before {
-    background-color: var(--primaryLight);
   }
 }
 /*-- -------------------------- -->
