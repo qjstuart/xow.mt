@@ -1,0 +1,108 @@
+@font-face {
+    font-family: 'MADE Okine Sans';
+    src: url('MADEOkineSans-Thin.woff2') format('woff2'),
+        url('MADEOkineSans-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MADE Okine Sans Medium Outline';
+    src: url('MADEOkineSans-MediumOutline.woff2') format('woff2'),
+        url('MADEOkineSans-MediumOutline.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MADE Okine Sans Outline';
+    src: url('MADEOkineSans-BoldOutline.woff2') format('woff2'),
+        url('MADEOkineSans-BoldOutline.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MADE Okine Sans Outline';
+    src: url('MADEOkineSans-RegularOutline.woff2') format('woff2'),
+        url('MADEOkineSans-RegularOutline.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MADE Okine Sans Light Outline';
+    src: url('MADEOkineSans-LightOutline.woff2') format('woff2'),
+        url('MADEOkineSans-LightOutline.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MADE Okine Sans';
+    src: url('MADEOkineSans-Black.woff2') format('woff2'),
+        url('MADEOkineSans-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MADE Okine Sans';
+    src: url('MADEOkineSans-Bold.woff2') format('woff2'),
+        url('MADEOkineSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MADE Okine Sans';
+    src: url('MADEOkineSans-Regular.woff2') format('woff2'),
+        url('MADEOkineSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MADE Okine Sans';
+    src: url('MADEOkineSans-Medium.woff2') format('woff2'),
+        url('MADEOkineSans-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MADE Okine Sans Thin Outline';
+    src: url('MADEOkineSans-ThinOutline.woff2') format('woff2'),
+        url('MADEOkineSans-ThinOutline.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MADE Okine Sans';
+    src: url('MADEOkineSans-Light.woff2') format('woff2'),
+        url('MADEOkineSans-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MADE Okine Sans Black Outline';
+    src: url('MADEOkineSans-BlackOutline.woff2') format('woff2'),
+        url('MADEOkineSans-BlackOutline.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+

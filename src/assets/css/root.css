@@ -106,7 +106,7 @@
     margin: 0;
     overflow-x: hidden;
     padding: 0;
-    font-family: "Roboto", Arial, sans-serif;
+    font-family: "MADE Okine Sans", Arial, sans-serif;
     font-size: 100%;
     color: var(--bodyTextColor);
   }
@@ -156,29 +156,21 @@
     left: 0;
     opacity: 0;
   }
-  /* roboto-regular - latin */
+  /* MADE Okine Sans Bold */
   @font-face {
+    font-family: "MADE Okine Sans";
+    src: url("/assets/fonts/made-okine-sans/MADEOkineSans-Bold.woff2") format("woff2"), url("/assets/fonts/made-okine-sans/MADEOkineSans-Bold.woff") format("woff");
+    font-weight: bold;
     font-style: normal;
-    font-family: "Roboto";
-    font-weight: 400;
     font-display: swap;
-    src: local(""), url("/assets/fonts/roboto-v29-latin-regular.woff2") format("woff2"), url("/assets/fonts/roboto-v29-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
-  /* roboto-700 - latin */
+  /* MADE Okine Sans Regular */
   @font-face {
+    font-family: "MADE Okine Sans";
+    src: local(""), url("/assets/fonts/made-okine-sans/MADEOkineSans-Regular.woff2") format("woff2"), url("/assets/fonts/made-okine-sans/MADEOkineSans-Regular.woff") format("woff");
+    font-weight: normal;
     font-style: normal;
-    font-family: "Roboto";
-    font-weight: 700;
     font-display: swap;
-    src: local(""), url("/assets/fonts/roboto-v29-latin-700.woff2") format("woff2"), url("/assets/fonts/roboto-v29-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
-  /* roboto-900 - latin */
-  @font-face {
-    font-style: normal;
-    font-family: "Roboto";
-    font-weight: 900;
-    font-display: swap;
-    src: local(""), url("/assets/fonts/roboto-v29-latin-900.woff2") format("woff2"), url("/assets/fonts/roboto-v29-latin-900.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
 }
 /* Reset Margins */
@@ -274,7 +266,7 @@
     box-sizing: border-box;
     padding: 0.75rem 1rem;
     /* remove the font family so the Stitch inherits the fonts from your global stylesheet */
-    font-family: "Roboto", "Arial", sans-serif;
+    font-family: "MADE Okine Sans", "Arial", sans-serif;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   }
   #cs-navigation .cs-container {
@@ -731,7 +723,7 @@
     box-sizing: border-box;
     padding: 0 1rem;
     /* remove the font family so the Stitch inherits the fonts from your global stylesheet */
-    font-family: "Roboto", "Arial", sans-serif;
+    font-family: "MADE Okine Sans", "Arial", sans-serif;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   }
   #cs-navigation .cs-container {
@@ -1033,6 +1025,9 @@
 <--- -------------------------- -*/
 /* Mobile */
 @media only screen and (min-width: 0rem) {
+  #footer {
+    padding-block: 2rem;
+  }
   #footer .section-footer {
     flex-flow: column;
     justify-content: center;
@@ -1140,208 +1135,6 @@
     grid-row-gap: 5rem;
     flex-flow: column;
     display: flex;
-  }
-}
-/* Mobile */
-@media only screen and (min-width: 0rem) {
-  #footer {
-    background: #1c1c1c;
-    padding: 5.25rem 0 1.25rem;
-    font-size: min(4vw, 1.2em);
-  }
-  #footer .left-section {
-    margin: auto;
-    margin-bottom: 3.125rem;
-    text-align: center;
-  }
-  #footer .left-section .logo {
-    display: inline-block;
-    margin: auto;
-    margin-bottom: 1.875em;
-    height: 2em;
-    width: auto;
-    text-align: center;
-  }
-  #footer .left-section .logo img {
-    display: block;
-    height: 100%;
-    width: auto;
-  }
-  #footer .left-section p {
-    opacity: 0.9;
-    margin: auto;
-    width: 100%;
-    font-size: 0.875rem;
-    line-height: 1.9285714286rem;
-    color: #fff;
-    text-align: center;
-  }
-  #footer .right-section {
-    margin: auto;
-    max-width: 25.4375rem;
-    width: 96%;
-  }
-  #footer .right-section .lists {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: auto;
-    max-width: 19.1875rem;
-    width: 96%;
-  }
-  #footer .right-section .lists ul {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding: 0;
-  }
-  #footer .right-section .lists ul li {
-    opacity: 0.9;
-    margin-bottom: 0.75rem;
-    list-style: none;
-    font-size: 1.125rem;
-    color: #fff;
-  }
-  #footer .right-section .lists ul li a {
-    text-decoration: none;
-    line-height: 1.1666666667em;
-    color: #fff;
-    transition: color 0.3s;
-  }
-  #footer .right-section .lists ul li a:hover {
-    color: var(--primary);
-  }
-  #footer .right-section .lists ul h2 {
-    position: relative;
-    margin-bottom: 2.3125rem;
-    text-transform: uppercase;
-    font-size: 1.125rem;
-    line-height: 1.1666666667em;
-    font-weight: bold;
-    color: #fff;
-  }
-  #footer .right-section .lists ul h2:before {
-    position: absolute;
-    bottom: -1rem;
-    left: 0;
-    content: "";
-    opacity: 1;
-    display: block;
-    background: var(--primary);
-    height: 0.125rem;
-    width: 6.0625rem;
-  }
-  #footer .right-section .lists ul:nth-of-type(3) {
-    margin-top: 3.125rem;
-  }
-  #footer .right-section .lists ul:nth-of-type(3) li {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin-bottom: 1rem;
-  }
-  #footer .right-section .lists ul:nth-of-type(3) li:last-of-type {
-    margin-bottom: 0;
-  }
-  #footer .right-section .buttons {
-    display: flex;
-    justify-content: center;
-  }
-  #footer .right-section .cs-button-solid {
-    margin: 0;
-    height: 3.3125rem;
-    width: 15.625rem;
-    padding-top: 0.1875rem;
-  }
-  #footer .credit {
-    margin: auto;
-    margin-top: 6.25rem;
-    width: 96%;
-    font-size: 1rem;
-    line-height: 2.25rem;
-    color: #fff;
-    text-align: center;
-  }
-  #footer .credit a {
-    text-decoration: none;
-    font-size: 1rem;
-    color: var(--primary);
-  }
-  #footer .credit a:hover {
-    text-decoration: underline;
-  }
-  #footer .credit .copyright {
-    display: block;
-    font-size: 1rem;
-  }
-}
-/* Small Desktop */
-@media only screen and (min-width: 64rem) {
-  #footer {
-    font-size: min(1.2vw, 1em);
-  }
-  #footer .container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    margin: auto;
-    max-width: 82.5rem;
-    width: 96%;
-    padding: 0;
-  }
-  #footer .left-section {
-    margin: 0;
-    width: 25.5625rem;
-    text-align: left;
-  }
-  #footer .left-section .logo {
-    margin-left: 0;
-    height: 2.5rem;
-    text-align: left;
-  }
-  #footer .left-section p {
-    margin-left: 0;
-    text-align: left;
-  }
-  #footer .right-section {
-    margin: 0;
-    max-width: none;
-    width: 38.0625rem;
-  }
-  #footer .right-section .lists {
-    margin: 0;
-    max-width: 48.0625rem;
-    width: 96%;
-  }
-  #footer .right-section .lists ul li a {
-    position: relative;
-  }
-  #footer .right-section .lists ul li a:before {
-    position: absolute;
-    bottom: -0.1875rem;
-    left: 0;
-    content: "";
-    opacity: 1;
-    display: block;
-    background: var(--primary);
-    height: 0.125rem;
-    width: 0%;
-    transition: width 0.3s;
-  }
-  #footer .right-section .lists ul li a:hover:before {
-    width: 100%;
-  }
-  #footer .right-section .lists ul:nth-of-type(3) {
-    margin-top: 0;
-  }
-  #footer .right-section .lists ul:nth-of-type(3) li:first-of-type {
-    margin-bottom: 0;
-  }
-  #footer .right-section .buttons {
-    justify-content: flex-start;
-  }
-  #footer .credit .copyright {
-    display: inline-block;
   }
 }
 

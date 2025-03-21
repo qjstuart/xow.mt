@@ -127,7 +127,7 @@
         margin: 0;
         overflow-x: hidden;
         padding: 0;
-        font-family: "Roboto", Arial, sans-serif;
+        font-family: "MADE Okine Sans", Arial, sans-serif;
         font-size: 100%;
         color: var(--bodyTextColor);
     }
@@ -188,44 +188,32 @@
         left: 0;
         opacity: 0;
     }
-    // Grab your fonts to locally host from https://google-webfonts-helper.herokuapp.com/fonts
 
-    /* roboto-regular - latin */
+    /* MADE Okine Sans Bold */
     @font-face {
-        font-style: normal;
-        font-family: "Roboto";
-        font-weight: 400;
-        font-display: swap;
+        font-family: "MADE Okine Sans";
         src:
-            local(""),
-            url("/assets/fonts/roboto-v29-latin-regular.woff2") format("woff2"),
-            /* Chrome 26+, Opera 23+, Firefox 39+ */
-                url("/assets/fonts/roboto-v29-latin-regular.woff")
-                format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+            url("/assets/fonts/made-okine-sans/MADEOkineSans-Bold.woff2")
+                format("woff2"),
+            url("/assets/fonts/made-okine-sans/MADEOkineSans-Bold.woff")
+                format("woff");
+        font-weight: bold;
+        font-style: normal;
+        font-display: swap;
     }
-    /* roboto-700 - latin */
+
+    /* MADE Okine Sans Regular */
     @font-face {
-        font-style: normal;
-        font-family: "Roboto";
-        font-weight: 700;
-        font-display: swap;
+        font-family: "MADE Okine Sans";
         src:
             local(""),
-            url("/assets/fonts/roboto-v29-latin-700.woff2") format("woff2"),
-            /* Chrome 26+, Opera 23+, Firefox 39+ */
-                url("/assets/fonts/roboto-v29-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-    }
-    /* roboto-900 - latin */
-    @font-face {
+            url("/assets/fonts/made-okine-sans/MADEOkineSans-Regular.woff2")
+                format("woff2"),
+            url("/assets/fonts/made-okine-sans/MADEOkineSans-Regular.woff")
+                format("woff");
+        font-weight: normal;
         font-style: normal;
-        font-family: "Roboto";
-        font-weight: 900;
         font-display: swap;
-        src:
-            local(""),
-            url("/assets/fonts/roboto-v29-latin-900.woff2") format("woff2"),
-            /* Chrome 26+, Opera 23+, Firefox 39+ */
-                url("/assets/fonts/roboto-v29-latin-900.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
     }
 }
 
@@ -350,7 +338,7 @@
         box-sizing: border-box;
         padding: calc(12 / 16 * 1rem) calc(16 / 16 * 1rem);
         /* remove the font family so the Stitch inherits the fonts from your global stylesheet */
-        font-family: "Roboto", "Arial", sans-serif;
+        font-family: "MADE Okine Sans", "Arial", sans-serif;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
         .cs-container {
@@ -918,7 +906,7 @@
         box-sizing: border-box;
         padding: 0 calc(16 / 16 * 1rem);
         /* remove the font family so the Stitch inherits the fonts from your global stylesheet */
-        font-family: "Roboto", "Arial", sans-serif;
+        font-family: "MADE Okine Sans", "Arial", sans-serif;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
         .cs-container {
@@ -1271,7 +1259,6 @@
 /* Mobile */
 @media only screen and (min-width: 0rem) {
     #footer {
-
         padding-block: 2rem;
 
         .section-footer {
