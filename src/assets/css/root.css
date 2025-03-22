@@ -692,7 +692,7 @@
     width: 100%;
     /* prevents padding from affecting height and width */
     box-sizing: border-box;
-    padding: 0 1rem;
+    padding: 0 3rem;
     /* remove the font family so the Stitch inherits the fonts from your global stylesheet */
     font-family: "MADE Okine Sans", "Arial", sans-serif;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
