@@ -349,7 +349,7 @@
         .cs-logo {
             z-index: 10;
             display: flex;
-            justify-content: center;
+            justify-content: start;
             align-items: center;
             margin: 0 auto 0 0;
             height: calc(65 / 16 * 1rem);
@@ -360,8 +360,7 @@
             padding: 0;
 
             img {
-                height: 100%;
-                width: 100%;
+                width: 60px;
                 /* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
                 object-fit: contain;
                 /* places the image to the left edge of the parent */
@@ -874,18 +873,15 @@
         .cs-logo {
             z-index: 100;
             display: flex;
-            justify-content: center;
             align-items: center;
             /* margin-right auto pushes everything away from it to the right */
             margin: 0 auto 0 0;
             height: calc(65 / 16 * 1rem);
             max-width: calc(350 / 16 * 1rem);
-            width: 18.4%;
             padding: 0;
 
             img {
-                height: 140%;
-                width: 140%;
+                width: 80px;
                 /* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
                 object-fit: contain;
             }
