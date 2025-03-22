@@ -481,6 +481,9 @@
     opacity: 1;
     width: 100%;
   }
+  .header-spacer {
+    height: 65px;
+  }
 }
 /*-- -------------------------- -->
 <---     Navigation Dropdown    -->
@@ -672,6 +675,9 @@
   }
   #cs-navigation .cs-li-link.cs-drop-link:before {
     display: none;
+  }
+  .header-spacer {
+    height: 85px;
   }
 }
 /*-- -------------------------- -->
