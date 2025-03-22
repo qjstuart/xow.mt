@@ -2,201 +2,304 @@
 /*-- -------------------------- -->
 <---           Hero             -->
 <--- -------------------------- -*/
-/* Mobile - 360px */
-@media only screen and (min-width: 0rem) {
-  #hero {
-    z-index: 1;
-    position: relative;
-    /* prevents overflow from the lines extending past the screen width */
-    overflow: hidden;
-    /* changes on tablet */
-    padding: 0 1rem;
-    padding-bottom: 6.25rem;
-    font-family: "Roboto", "Arial", sans-serif;
-    /* Centers button */
-    text-align: center;
+#hero .hero-wrapper {
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  padding-top: 15vh;
+  padding-bottom: 4rem;
+  display: flex;
+  position: relative;
+}
+#hero .w-layout-blockcontainer {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+#hero .container {
+  width: 100%;
+  max-width: 110rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+#hero .w-container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 940px;
+}
+#hero .w-container:before, #hero .w-container:after {
+  content: " ";
+  display: table;
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-column-end: 2;
+  grid-row-end: 2;
+}
+#hero .w-container:after {
+  clear: both;
+}
+#hero .hero-header {
+  z-index: 3;
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+  text-align: center;
+  flex-flow: column;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+#hero .tag-wrapper {
+  grid-column-gap: 0.6875rem;
+  grid-row-gap: 0.6875rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+#hero .elipse {
+  background-color: var(--color--primary);
+  border-radius: 50%;
+  width: 0.4rem;
+  height: 0.4rem;
+}
+#hero .big-elipse {
+  background-color: var(--color--primary);
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+}
+#hero .tag {
+  grid-column-gap: 0.5rem;
+  grid-row-gap: 0.5rem;
+  display: flex;
+}
+#hero .text-weight-medium {
+  font-weight: 500;
+}
+#hero .caps {
+  text-transform: uppercase;
+}
+#hero .hero-card {
+  background-color: var(--color--font);
+  border-radius: 1vh;
+  width: 45vh;
+  height: 55vh;
+  position: absolute;
+  overflow: hidden;
+}
+#hero .hero-card.first {
+  z-index: 3;
+  transform: rotate(-4.89deg);
+}
+#hero .hero-card.second {
+  z-index: 2;
+  background-color: var(--color--primary);
+  transform: rotate(-0.463deg);
+}
+#hero .hero-card.third {
+  z-index: 1;
+  background-color: #aa4646;
+  transform: rotate(3.712deg);
+}
+#hero .image {
+  width: 100%;
+  height: 100%;
+}
+#hero .hero-component {
+  flex-flow: column;
+  align-items: center;
+  width: 100%;
+  display: flex;
+}
+#hero .hero-content {
+  justify-content: space-between;
+  width: 100%;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  display: flex;
+}
+#hero .hero-left-content {
+  text-align: left;
+  max-width: 30ch;
+}
+#hero .hero-interaction-wrapper {
+  z-index: 2;
+  pointer-events: none;
+  cursor: none;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 4vh;
+  display: flex;
+  position: absolute;
+  inset: 0%;
+}
+#hero .text-size-small {
+  font-size: var(--text-size--small);
+  line-height: 1.5;
+}
+#hero .button-hero {
+  color: var(--color--font);
+  border-radius: 0.25rem;
+}
+#hero .w-inline-block {
+  max-width: 100%;
+  display: inline-block;
+}
+#hero .text-weight-medium {
+  font-weight: 500;
+}
+#hero .button-line-wrap {
+  background-color: rgba(21, 21, 21, 0.1019607843);
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  height: 1px;
+  margin-top: 3px;
+  display: flex;
+}
+#hero .button-line-animation {
+  background-color: #151515;
+  width: 30%;
+  height: 1px;
+}
+#hero .hero-big-text {
+  grid-column-gap: 4rem;
+  grid-row-gap: 4rem;
+  white-space: nowrap;
+  align-items: center;
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+}
+#hero .hero-marquee {
+  grid-column-gap: 4rem;
+  grid-row-gap: 4rem;
+  align-items: center;
+  display: flex;
+}
+#hero .text-size-display {
+  font-size: var(--text-size--display);
+  letter-spacing: -0.5975rem;
+  font-weight: 300;
+  line-height: 1;
+}
+#hero .hero-grid {
+  z-index: 0;
+  pointer-events: none;
+  width: 74vw;
+  max-width: 80rem;
+  margin-top: -4vw;
+  position: absolute;
+}
+
+/* Desktop - 992px */
+@media screen and (max-width: 991px) {
+  #hero .hero-wrapper {
+    height: auto;
+    padding-bottom: 0;
   }
-  #hero .cs-picture {
-    z-index: -2;
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    height: 100%;
-    /* Background Image */
-    width: 100%;
+  #hero .w-layout-blockcontainer {
+    max-width: 728px;
   }
-  #hero .cs-picture img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    /* Makes image act like a background-image */
-    object-fit: cover;
+  #hero .container {
+    width: auto;
+    max-width: 110rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
-  #hero .cs-picture:before {
-    z-index: 1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    /* Black Color Overlay */
-    content: "";
-    opacity: 0.7;
-    display: block;
-    background: #000;
-    height: 100%;
-    width: 100%;
-    /* prevents the cursor from interacting with it */
-    pointer-events: none;
+  #hero .w-container {
+    max-width: 728px;
   }
-  #hero .cs-container {
-    position: relative;
-    margin: auto;
-    max-width: 80em;
-    width: 100%;
-    /* we put the padding top and bottom on the container instead of #Hero so the pseudo element lines go to the top and bottom of the section */
-    /* 144px - 280px - leaving extra space for the navigation */
-    /* changes on tablet */
-    padding: clamp(9em, 25.95vw, 17.5em) 0;
+  #hero .heading {
+    max-width: 60ch;
   }
-  #hero .cs-container:before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    /* Left Line */
-    content: "";
-    opacity: 1;
-    display: block;
-    background: -moz-linear-gradient(top, rgba(250, 251, 252, 0.5) 0%, rgba(250, 251, 252, 0) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(250, 251, 252, 0.5) 0%, rgba(250, 251, 252, 0) 100%); /* Chrome10-25,Safari5.1-6 */
-    height: 100%;
-    width: 1px;
-  }
-  #hero .cs-flex-group {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
-    margin: auto;
-    /* 60px - 220px */
-    margin-bottom: clamp(3.75em, 15.5vw, 13.75em);
-    /* 464px - 562px */
-    max-width: clamp(29em, 60vw, 35.125em);
-    width: 80vw;
-    box-sizing: border-box;
-  }
-  #hero .cs-topper {
-    margin-bottom: 1rem;
-    color: var(--primary);
-    text-align: center;
-  }
-  #hero .cs-title {
-    width: 100%;
-    color: var(--bodyTextColorWhite);
-    text-align: center;
-  }
-  #hero .cs-text {
-    /* 32px - 40px */
-    margin: 0 auto clamp(2rem, 4vw, 2.5rem) 0;
-    /* 40px - 48px */
-    margin-bottom: clamp(2.5rem, 4vw, 3rem);
-    color: var(--bodyTextColorWhite);
-    text-align: center;
-  }
-  #hero .cs-button-solid {
-    margin-bottom: 1rem;
-    height: initial;
-    line-height: clamp(2.875em, 5.5vw, 3.5em);
-  }
-  #hero .cs-button-transparent {
-    z-index: 1;
-    position: relative;
-    display: inline-flex;
+  #hero .hero-interaction-wrapper {
     justify-content: center;
     align-items: center;
-    border: 1px solid var(--bodyTextColorWhite);
-    margin: 0 0.5rem;
-    background-color: transparent;
-    /* 46px - 56px */
-    height: clamp(2.875em, 5.5vw, 3.5em);
-    width: 11.25rem;
-    box-sizing: border-box;
-    padding: 0;
-    text-decoration: none;
-    font-size: 1rem;
-    /* 46px - 56px */
-    line-height: clamp(2.875em, 5.5vw, 3.5em);
-    font-weight: 700;
-    color: #fff;
+    height: 50vh;
+    padding-bottom: 0;
+    position: relative;
   }
-  #hero .cs-button-transparent .cs-img {
-    display: block;
-    margin-right: 0.75rem;
+  #hero .hero-card {
+    width: 30vh;
+    height: 38vh;
   }
-  #hero .cs-button-transparent:before {
-    z-index: -1;
-    position: absolute;
-    /* so it sits on top of the border */
-    top: -1px;
-    bottom: -1px;
-    left: -1px;
-    right: -1px;
-    content: "";
-    opacity: 1;
-    /* this is what creates the grow affect on hover */
-    transform: scaleX(0);
-    display: block;
-    background: #000;
-    transition: transform 0.3s;
-    transform-origin: left;
+  #hero .hero-component {
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
   }
-  #hero .cs-button-transparent:hover:before {
-    transform: scaleX(1);
+  #hero .hero-content {
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+    text-align: center;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  #hero .hero-left-content {
+    text-align: center;
+  }
+  #hero .text-size-display {
+    letter-spacing: 0;
+    font-size: 8rem;
   }
 }
 /* Tablet - 768px */
-@media only screen and (min-width: 48rem) {
-  #hero {
-    /* 32px - 40px */
-    padding: 0 clamp(2em, 5vw, 2.5em);
+@media screen and (max-width: 767px) {
+  #hero .w-layout-blockcontainer {
+    max-width: none;
   }
-  #hero .cs-container {
-    padding: clamp(7em, 27.95vw, 17.5em) 0 clamp(9em, 30.95vw, 23.5em) 0;
+  #hero .image {
+    object-position: 50% 20%;
   }
-  #hero .cs-container:after {
+  #hero .hero-content {
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+/* Mobile~Tablet - 479px */
+@media screen and (max-width: 479px) {
+  #hero .hero-wrapper {
+    grid-column-gap: 4rem;
+    grid-row-gap: 4rem;
+    height: auto;
+    overflow: hidden;
+  }
+  #hero .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  #hero .w-container {
+    max-width: none;
+  }
+  #hero .tag-wrapper {
+    justify-content: center;
+    align-items: center;
+  }
+  #hero .elipse.hide-mobile {
+    display: none;
+  }
+  #hero .heading {
+    max-width: 80ch;
+  }
+  #hero .hero-interaction-wrapper {
+    height: 60vh;
+    position: relative;
+  }
+  #hero .hero-card {
+    width: 45vh;
+    height: 60vh;
     position: absolute;
-    top: 0;
-    right: 0;
-    /* Right Line */
-    content: "";
-    opacity: 1;
-    display: block;
-    background: -moz-linear-gradient(top, rgba(250, 251, 252, 0) 0%, rgba(250, 251, 252, 0.5) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(250, 251, 252, 0) 0%, rgba(250, 251, 252, 0.5) 100%); /* Chrome10-25,Safari5.1-6 */
-    height: 100%;
-    width: 1px;
   }
-  #hero .cs-button-solid {
-    margin-right: 1.25rem;
-    margin-bottom: 0;
-  }
-}
-/* Desktop Parallax Effect - 1300px */
-@media only screen and (min-width: 81.25em) {
-  #hero {
-    background: url("/assets/images/landing.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    /* creates parallax effect on background image */
-    background-attachment: fixed;
-  }
-}
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
-  body.dark-mode #hero .cs-background:before {
-    opacity: 0.8;
+  #hero .text-size-display.break-mobile {
+    word-break: break-all;
   }
 }
 /*-- -------------------------- -->
@@ -279,19 +382,6 @@
   }
   .services .card {
     max-width: 22.3125em;
-  }
-}
-/* Dark mode */
-@media only screen and (min-width: 0rem) {
-  body.dark-mode #services {
-    background: var(--medium);
-  }
-  body.dark-mode #services picture {
-    background: var(--primaryDark);
-  }
-  body.dark-mode #services h2 {
-    font-weight: bold;
-    color: #fff;
   }
 }
 
