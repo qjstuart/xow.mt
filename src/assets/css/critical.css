@@ -198,7 +198,7 @@
   position: absolute;
 }
 
-/* Desktop - 992px */
+/* Screens up to 991px */
 @media screen and (max-width: 991px) {
   #hero .hero-wrapper {
     height: auto;
@@ -250,7 +250,7 @@
     font-size: 8rem;
   }
 }
-/* Tablet - 768px */
+/* Screens up to 767px */
 @media screen and (max-width: 767px) {
   #hero .w-layout-blockcontainer {
     max-width: none;
@@ -264,7 +264,7 @@
     align-items: center;
   }
 }
-/* Mobile~Tablet - 479px */
+/* Screens up to 479px */
 @media screen and (max-width: 479px) {
   #hero .hero-wrapper {
     grid-column-gap: 4rem;
