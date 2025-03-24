@@ -5,7 +5,27 @@
 /* CodeStitch Root and Helpers */
 @media only screen and (min-width: 0rem) {
   :root {
-    --color--primary: #ffba19;
+    --color--primary: #ee64ff;
+    --color--background: #efefef;
+    --color--font: #151515;
+    --color--button: #151515;
+    --color--card: white;
+    --heading--h1: 5rem;
+    --heading--h2: 3.5rem;
+    --heading--h3: 1.5rem;
+    --heading--h4: 1.375rem;
+    --heading--h5: 1.25rem;
+    --heading--h6: 1.125rem;
+    --text-size--small: 0.875rem;
+    --text-size--regular: 1rem;
+    --text-size--medium: 1.125rem;
+    --text-size--large: 1.5rem;
+    --text-size--huge: 3.5rem;
+    --text-size--display: 13.125rem;
+    --font--satoshi: Satoshi, sans-serif;
+    --font--satoshi-variable: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    --font--made--okine--sans: "MADE Okine Sans", Arial, sans-serif;
+    --border--radius: 0.2rem;
     --primaryLight: #ffd675;
     --secondary: #001f3f;
     --secondaryLight: #001f3f;
@@ -19,72 +39,6 @@
     --bodyFontSize: 1rem;
     /* 60px - 100px top and bottom */
     --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
-  }
-  .cs-topper {
-    display: block;
-    margin-bottom: 0.25rem;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    font-size: var(--topperFontSize);
-    line-height: 1.2em;
-    font-weight: 700;
-    color: var(--color--primary);
-    text-align: inherit;
-  }
-  .cs-title {
-    position: relative;
-    margin: 0 0 1rem 0;
-    max-width: 43.75rem;
-    font-size: var(--headerFontSize);
-    line-height: 1.2em;
-    font-weight: 900;
-    color: var(--headerColor);
-    text-align: inherit;
-  }
-  .cs-text {
-    margin: 0;
-    max-width: 40.625rem;
-    width: 100%;
-    font-size: var(--bodyFontSize);
-    line-height: 1.5em;
-    color: var(--bodyTextColor);
-    text-align: inherit;
-  }
-  .cs-button-solid {
-    z-index: 1;
-    position: relative;
-    display: inline-block;
-    background-color: var(--color--primary);
-    width: auto;
-    padding: 0 1.875rem;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 1rem;
-    line-height: 3.125em;
-    font-weight: bold;
-    color: #000;
-    transition: color 0.3s;
-    transition-delay: 0.1s;
-    text-align: center;
-  }
-  .cs-button-solid:hover {
-    color: #fff;
-  }
-  .cs-button-solid:hover:before {
-    width: 100%;
-  }
-  .cs-button-solid:before {
-    z-index: -1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    content: "";
-    opacity: 1;
-    display: block;
-    background-color: #000;
-    height: 100%;
-    width: 0;
-    transition: width 0.3s;
   }
   .cs-hide-on-mobile {
     display: none;
