@@ -5,7 +5,7 @@
 /* CodeStitch Root and Helpers */
 @media only screen and (min-width: 0rem) {
   :root {
-    --primary: #ffba19;
+    --color--primary: #ffba19;
     --primaryLight: #ffd675;
     --secondary: #001f3f;
     --secondaryLight: #001f3f;
@@ -28,7 +28,7 @@
     font-size: var(--topperFontSize);
     line-height: 1.2em;
     font-weight: 700;
-    color: var(--primary);
+    color: var(--color--primary);
     text-align: inherit;
   }
   .cs-title {
@@ -54,7 +54,7 @@
     z-index: 1;
     position: relative;
     display: inline-block;
-    background-color: var(--primary);
+    background-color: var(--color--primary);
     width: auto;
     padding: 0 1.875rem;
     text-decoration: none;
@@ -119,11 +119,6 @@
   }
   body {
     transition: background-color 0.3s;
-  }
-  .container {
-    position: relative;
-    margin: auto;
-    width: 92%;
   }
   h1,
   h2,
@@ -534,7 +529,7 @@
     justify-content: flex-start;
     align-items: flex-end;
     margin: 0;
-    background-color: var(--primary);
+    background-color: var(--color--primary);
     height: 0;
     width: 100%;
     box-sizing: border-box;
@@ -592,7 +587,7 @@
     visibility: hidden;
     opacity: 0;
     transform: scaleY(0);
-    border-bottom: 5px solid var(--primary);
+    border-bottom: 5px solid var(--color--primary);
     margin: 0;
     background-color: #fff;
     min-width: 12.5rem;
@@ -761,7 +756,7 @@
     content: "";
     opacity: 1;
     display: block;
-    background: var(--primary);
+    background: var(--color--primary);
     height: 2px;
     width: 0%;
     transition: width 0.3s;
