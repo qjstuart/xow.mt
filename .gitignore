@@ -1,7 +1,24 @@
+# Default .gitignores
 .vscode
 .cache
 node_modules
 public
+
+# Webflow exported code
 _webflow-exported
+
+# XOW assets
 _xow-assets
+
+# Original WOFF & WOFF2 font download
 src/assets/fonts/transfonter.org-20250321-100526.zip
+
+# Original Webflow template styles only used for reference during development
+src/assets/sass/webflow.scss
+src/assets/sass/xow-mt.webflow.scss
+
+src/assets/css/webflow.css
+src/assets/css/xow-mt.webflow.css
+
+src/assets/css/webflow.css.map
+src/assets/css/xow-mt.webflow.css.map
