@@ -7,6 +7,9 @@ public
 # Webflow exported code
 _webflow-exported
 
+# Webflow exported code (using ExFlow)
+_exflow-exported
+
 # XOW assets
 _xow-assets
 
