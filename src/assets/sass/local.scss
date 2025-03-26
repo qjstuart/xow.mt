@@ -3,6 +3,7 @@
 /*-- -------------------------- -->
 <---      BRAND-STATEMENTS      -->
 <--- -------------------------- -*/
+// This CSS is based on the Sandbox Webflow design, which seems to have designed desktop-first instead of mobile-first.
 #brand-statements {
     .section {
         margin-top: 12rem;
@@ -174,7 +175,7 @@
     .button-primary {
         grid-row-gap: 0.25rem;
         background-color: var(--color--button);
-        color: var(--color--backgroung);
+        color: var(--color--background);
         font-size: var(--text-size--medium);
         text-transform: uppercase;
         cursor: pointer;
@@ -195,6 +196,10 @@
     .w-inline-block {
         max-width: 100%;
         display: inline-block;
+    }
+
+    #w-node-a0214055-a5b9-6870-0c35-2638d43cc460-672a1055 {
+        grid-area: 2 / 2 / 3 / 3;
     }
 }
 
@@ -285,6 +290,18 @@
 
         .top-content {
             max-width: none;
+        }
+
+        #w-node-_1af93a0f-02ae-0fb1-39b8-a79c00b212e1-672a1055 {
+            grid-area: 2 / 1 / 3 / 2;
+        }
+
+        #w-node-_1af93a0f-02ae-0fb1-39b8-a79c00b212e6-672a1055 {
+            grid-area: 2 / 2 / 3 / 3;
+        }
+
+        #w-node-_1af93a0f-02ae-0fb1-39b8-a79c00b212eb-672a1055 {
+            grid-area: 3 / 1 / 3 / 2;
         }
     }
 }
