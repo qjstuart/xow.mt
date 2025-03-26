@@ -1,7 +1,7 @@
 /* PAGE-SPECIFIC STYLES FOR THE HOME PAGE */
 
 /*-- -------------------------- -->
-<---      BRAND-STATEMENTS      -->
+<---      Brand Statements      -->
 <--- -------------------------- -*/
 // This CSS is based on the Sandbox Webflow design, which seems to have designed desktop-first instead of mobile-first.
 #brand-statements {
@@ -23,6 +23,29 @@
         margin-right: auto;
         padding-left: 2.5rem;
         padding-right: 2.5rem;
+    }
+
+    .w-container {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 940px;
+
+        &:before,
+        &:after {
+            content: " ";
+            display: table;
+            grid-column-start: 1;
+            grid-row-start: 1;
+            grid-column-end: 2;
+            grid-row-end: 2;
+        }
+        &:after {
+            clear: both;
+        }
+        & .w-row {
+            margin-left: -10px;
+            margin-right: -10px;
+        }
     }
 
     .text-images-wrapper {
