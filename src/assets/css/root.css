@@ -141,6 +141,14 @@
     left: 0;
     opacity: 0;
   }
+  /* MADE Okine Sans Black */
+  @font-face {
+    font-family: "MADE Okine Sans";
+    src: url("/assets/fonts/made-okine-sans/MADEOkineSans-Black.woff2") format("woff2"), url("/assets/fonts/made-okine-sans/MADEOkineSans-Black.woff") format("woff");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+  }
   /* MADE Okine Sans Bold */
   @font-face {
     font-family: "MADE Okine Sans";
@@ -154,6 +162,22 @@
     font-family: "MADE Okine Sans";
     src: local(""), url("/assets/fonts/made-okine-sans/MADEOkineSans-Regular.woff2") format("woff2"), url("/assets/fonts/made-okine-sans/MADEOkineSans-Regular.woff") format("woff");
     font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  /* MADE Okine Sans Medium */
+  @font-face {
+    font-family: "MADE Okine Sans";
+    src: local(""), url("/assets/fonts/made-okine-sans/MADEOkineSans-Medium.woff2") format("woff2"), url("/assets/fonts/made-okine-sans/MADEOkineSans-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  /* MADE Okine Sans Light */
+  @font-face {
+    font-family: "MADE Okine Sans";
+    src: local(""), url("/assets/fonts/made-okine-sans/MADEOkineSans-Light.woff2") format("woff2"), url("/assets/fonts/made-okine-sans/MADEOkineSans-Light.woff") format("woff");
+    font-weight: 300;
     font-style: normal;
     font-display: swap;
   }
