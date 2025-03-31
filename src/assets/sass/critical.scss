@@ -257,6 +257,92 @@
         margin-top: -4vw;
         position: absolute;
     }
+
+    // New CSS for carousel slider
+    // Method from https://youtu.be/bd9MLIb3DCg?si=SjlfnIB9N8Fgxnj2
+    .stock-ticker {
+        font-size: 15px;
+        padding-block: 8px;
+        // border-block: 1px solid;
+        overflow: hidden;
+        user-select: none;
+        width: 100%;
+
+        --gap: 100px;
+        display: flex;
+        gap: 60px;
+
+        ul {
+            list-style: none;
+            flex-shrink: 0;
+            // min-width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 60px;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+
+            animation: scroll 60s linear infinite;
+
+            li {
+                display: flex;
+                align-items: center;
+                gap: 60px;
+
+                span {
+                    font-size: 8rem !important;
+                }
+            }
+
+            // These background colors help during development
+            // &:first-child {
+            //     background-color: yellow;
+            // }
+
+            // &:last-child {
+            //     background-color: pink;
+            // }
+        }
+
+        &:hover ul {
+            animation-play-state: paused;
+        }
+
+        @keyframes scroll {
+            to {
+                transform: translateX(calc(-100% - var(--gap)));
+            }
+        }
+    }
+
+    .stock-ticker .company,
+    .stock-ticker .price {
+        font-weight: bold;
+    }
+
+    .stock-ticker .price {
+        margin-inline: 4px;
+    }
+
+    .stock-ticker .plus::before {
+        content: "↑";
+    }
+
+    .stock-ticker .minus::before {
+        content: "↓";
+    }
+
+    .stock-ticker .plus .change,
+    .stock-ticker .plus::before {
+        color: #089981;
+    }
+
+    .stock-ticker .minus .change,
+    .stock-ticker .minus::before {
+        color: #f23645;
+    }
 }
 
 /* Screens up to 991px */
@@ -302,6 +388,10 @@
         .hero-component {
             grid-column-gap: 1rem;
             grid-row-gap: 1rem;
+
+            &.copy {
+                overflow: hidden;
+            }
         }
 
         .hero-content {
