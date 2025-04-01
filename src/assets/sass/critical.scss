@@ -296,7 +296,7 @@
                 }
             }
 
-            // These background colors help during development
+            /* These background colors help during development */
             // &:first-child {
             //     background-color: yellow;
             // }
@@ -306,9 +306,10 @@
             // }
         }
 
-        &:hover ul {
-            animation-play-state: paused;
-        }
+        /* Uncomment to pause scroll animation on hover */
+        // &:hover ul {
+        //     animation-play-state: paused;
+        // }
 
         @keyframes scroll {
             to {
