@@ -230,6 +230,16 @@
         display: flex;
         opacity: 0; // hide initially to animate in
 
+        .number {
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        &:hover {
+            .number {
+                opacity: 0.8;
+            }
+        }
+
         &.animate {
             animation: fade-in-slide-up-60px 0.75s ease-out forwards;
         }
@@ -467,7 +477,7 @@
             grid-row-gap: 3rem;
             flex-flow: column;
 
-            &.card {
+            &.animate {
                 animation-delay: 0s;
             }
         }

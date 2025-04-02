@@ -196,6 +196,12 @@
   display: flex;
   opacity: 0;
 }
+#brand-statements .card .number {
+  transition: opacity 0.5s ease-in-out;
+}
+#brand-statements .card:hover .number {
+  opacity: 0.8;
+}
 #brand-statements .card.animate {
   animation: fade-in-slide-up-60px 0.75s ease-out forwards;
 }
@@ -393,7 +399,7 @@
     grid-row-gap: 3rem;
     flex-flow: column;
   }
-  #brand-statements .card.card {
+  #brand-statements .card.animate {
     animation-delay: 0s;
   }
   #brand-statements .big-text {
