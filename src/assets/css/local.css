@@ -194,6 +194,29 @@
   height: 100%;
   padding: 4rem 3.5rem 4.3rem;
   display: flex;
+  opacity: 0;
+}
+#brand-statements .card.animate {
+  animation: fade-in-slide-up-60px 0.75s ease-out forwards;
+}
+#brand-statements .card:nth-child(1).animate {
+  animation-delay: 0s;
+}
+#brand-statements .card:nth-child(2).animate {
+  animation-delay: 0.3s;
+}
+#brand-statements .card:nth-child(3).animate {
+  animation-delay: 0.6s;
+}
+@keyframes fade-in-slide-up-60px {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 #brand-statements .top-content {
   grid-column-gap: 1.5rem;
@@ -316,6 +339,9 @@
     padding-left: 2rem;
     padding-right: 2rem;
   }
+  #brand-statements .card.animate {
+    animation-delay: 0s;
+  }
   #brand-statements .top-content {
     max-width: none;
   }
@@ -366,6 +392,9 @@
     grid-column-gap: 3rem;
     grid-row-gap: 3rem;
     flex-flow: column;
+  }
+  #brand-statements .card.card {
+    animation-delay: 0s;
   }
   #brand-statements .big-text {
     font-size: 9rem;

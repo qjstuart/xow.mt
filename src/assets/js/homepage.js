@@ -66,6 +66,11 @@ function animateBigNumbersCard(bigNumbersCard) {
     bigNumbersCard.classList.add("animate");
 }
 
+// Animations for .grid.card
+function animateGridCard(gridCard) {
+    gridCard.classList.add("animate");
+}
+
 function initializeAnimations() {
     observeElement(".hero-header", animateHeroHeader);
     observeElement("#brand-statements .text-images", animateTextImages);
@@ -84,6 +89,9 @@ function initializeAnimations() {
         animateBigNumbersCard,
         (options = { threshold: 1 }),
     );
+    observeElement("#brand-statements .grid .card.one", animateGridCard);
+    observeElement("#brand-statements .grid .card.two", animateGridCard);
+    observeElement("#brand-statements .grid .card.three", animateGridCard);
 }
 
 // Initialize all animations on page load

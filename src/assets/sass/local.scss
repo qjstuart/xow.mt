@@ -228,6 +228,31 @@
         height: 100%;
         padding: 4rem 3.5rem 4.3rem;
         display: flex;
+        opacity: 0; // hide initially to animate in
+
+        &.animate {
+            animation: fade-in-slide-up-60px 0.75s ease-out forwards;
+        }
+        &:nth-child(1).animate {
+            animation-delay: 0s;
+        }
+        &:nth-child(2).animate {
+            animation-delay: 0.3s;
+        }
+        &:nth-child(3).animate {
+            animation-delay: 0.6s;
+        }
+
+        @keyframes fade-in-slide-up-60px {
+            from {
+                opacity: 0;
+                transform: translateY(60px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
     }
 
     .top-content {
@@ -371,6 +396,10 @@
             flex-flow: row;
             padding-left: 2rem;
             padding-right: 2rem;
+
+            &.animate {
+                animation-delay: 0s;
+            }
         }
 
         .top-content {
@@ -437,6 +466,10 @@
             grid-column-gap: 3rem;
             grid-row-gap: 3rem;
             flex-flow: column;
+
+            &.card {
+                animation-delay: 0s;
+            }
         }
 
         .big-text {
