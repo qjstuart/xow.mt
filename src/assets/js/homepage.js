@@ -71,27 +71,86 @@ function animateGridCard(gridCard) {
     gridCard.classList.add("animate");
 }
 
+// Animations for .works-wrapper .header
+function animateWorksWrapperHeader(worksWrapperHeader) {
+    worksWrapperHeader.classList.add("animate");
+}
+
+// Animations for .collection-list-wrapper (projects)
+function animateCollectionList(collectionListWrapper) {
+    collectionListWrapper.classList.add("animate");
+}
+
+// Animations for .logos-component .slide-interaction
+function animateSlideInteraction(slideInteraction) {
+    slideInteraction.classList.add("animate");
+}
+
+// Animations for .logos-grid
+function animateLogosGrid(logosGrid) {
+    const logos = logosGrid.querySelectorAll(".logos");
+
+    if (logos.length > 0) {
+        logos.forEach((logo) => {
+            logo.classList.add("animate");
+        });
+    }
+}
+
+// Animations for .testimonial-wrapper .header
+function animateTestimonialWrapperHeader(testimonialWrapperHeader) {
+    const h2 = testimonialWrapperHeader.querySelector("h2");
+    const div = testimonialWrapperHeader.querySelector("div");
+
+    if (h2) {
+        h2.classList.add("animate");
+    }
+
+    if (div) {
+        div.classList.add("animate");
+    }
+}
+
 function initializeAnimations() {
     observeElement(".hero-header", animateHeroHeader);
     observeElement("#brand-statements .text-images", animateTextImages);
     observeElement(
         "#brand-statements .big-numbers-card.one",
         animateBigNumbersCard,
-        (options = { threshold: 1 }),
+        (options = { threshold: 0.5 }),
     );
     observeElement(
         "#brand-statements .big-numbers-card.two",
         animateBigNumbersCard,
-        (options = { threshold: 1 }),
+        (options = { threshold: 0.5 }),
     );
     observeElement(
         "#brand-statements .big-numbers-card.three",
         animateBigNumbersCard,
-        (options = { threshold: 1 }),
+        (options = { threshold: 0.5 }),
     );
     observeElement("#brand-statements .grid .card.one", animateGridCard);
     observeElement("#brand-statements .grid .card.two", animateGridCard);
     observeElement("#brand-statements .grid .card.three", animateGridCard);
+
+    observeElement(
+        "#featured-projects .works-wrapper .header",
+        animateWorksWrapperHeader,
+        (options = { threshold: 0.2 }),
+    );
+    observeElement(
+        "#featured-projects .collection-list-wrapper",
+        animateCollectionList,
+    );
+    observeElement(
+        "#featured-projects .slide-interaction",
+        animateSlideInteraction,
+    );
+    observeElement("#featured-projects .logos-grid", animateLogosGrid);
+    observeElement(
+        "#featured-projects .testimonial-wrapper .header",
+        animateTestimonialWrapperHeader,
+    );
 }
 
 // Initialize all animations on page load

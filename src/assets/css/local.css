@@ -55,7 +55,8 @@
   opacity: 0;
 }
 #brand-statements .text-images.animate {
-  animation: fade-in-slide-up-80px 1s ease-out forwards;
+  animation: fade-in-slide-up-80px 1s cubic-bezier(0.25, 1, 0.5, 1);
+  animation-fill-mode: forwards;
 }
 @keyframes fade-in-slide-up-80px {
   from {
@@ -135,7 +136,7 @@
   display: flex;
 }
 #brand-statements .big-numbers-wrapper div.animate {
-  animation: fade-in-slide-up-30px 1s ease-out forwards;
+  animation: fade-in-slide-up-40px 1s ease-out forwards;
 }
 #brand-statements .big-numbers-wrapper :nth-child(1).animate {
   animation-delay: 0s;
@@ -155,10 +156,10 @@
   display: flex;
   opacity: 0;
 }
-@keyframes fade-in-slide-up-30px {
+@keyframes fade-in-slide-up-40px {
   from {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(40px);
   }
   to {
     opacity: 1;
@@ -479,6 +480,22 @@
   align-items: center;
   display: flex;
 }
+#featured-projects .works-wrapper .header {
+  opacity: 0;
+}
+#featured-projects .works-wrapper .header.animate {
+  animation: fade-in-slide-up-60px 0.8s ease-out forwards;
+}
+@keyframes fade-in-slide-up-60px {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 #featured-projects .header {
   grid-column-gap: 1.5rem;
   grid-row-gap: 1.5rem;
@@ -498,6 +515,20 @@
 }
 #featured-projects .collection-list-wrapper {
   width: 100%;
+  opacity: 0;
+}
+#featured-projects .collection-list-wrapper.animate {
+  animation: fade-in-slide-up-60px 0.8s ease-out forwards;
+}
+@keyframes fade-in-slide-up-60px {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 #featured-projects .collection-list {
   grid-column-gap: 2rem;
@@ -571,6 +602,22 @@
   align-items: center;
   display: flex;
 }
+#featured-projects .logos-component .slide-interaction {
+  opacity: 0;
+}
+#featured-projects .logos-component .slide-interaction.animate {
+  animation: fade-in-slide-up-60px 0.8s ease-out forwards;
+}
+@keyframes fade-in-slide-up-60px {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 #featured-projects .text-size-medium {
   font-size: var(--text-size--medium);
   line-height: 1.1;
@@ -586,6 +633,43 @@
   grid-auto-columns: 1fr;
   place-items: center stretch;
   display: grid;
+}
+#featured-projects .logos-grid div {
+  opacity: 0;
+}
+#featured-projects .logos-grid div.animate {
+  animation: fade-in-slide-up-80px 1.5s cubic-bezier(0.25, 1, 0.5, 1);
+  animation-fill-mode: forwards;
+}
+@keyframes fade-in-slide-up-80px {
+  from {
+    opacity: 0;
+    transform: translateY(80px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+#featured-projects .logos-grid :nth-child(1).animate,
+#featured-projects .logos-grid :nth-child(6).animate {
+  animation-delay: 0s;
+}
+#featured-projects .logos-grid :nth-child(2).animate,
+#featured-projects .logos-grid :nth-child(7).animate {
+  animation-delay: 0.1s;
+}
+#featured-projects .logos-grid :nth-child(3).animate,
+#featured-projects .logos-grid :nth-child(8).animate {
+  animation-delay: 0.3s;
+}
+#featured-projects .logos-grid :nth-child(4).animate,
+#featured-projects .logos-grid :nth-child(9).animate {
+  animation-delay: 0.5s;
+}
+#featured-projects .logos-grid :nth-child(5).animate,
+#featured-projects .logos-grid :nth-child(10).animate {
+  animation-delay: 0.7s;
 }
 #featured-projects #w-node-_8c09f274-22f7-e716-7c2e-3f9c1e0aec20-672a1055 {
   place-self: center;
@@ -616,6 +700,31 @@
   flex-flow: column;
   align-items: center;
   display: flex;
+}
+#featured-projects .testimonial-wrapper .header h2 {
+  opacity: 0;
+}
+#featured-projects .testimonial-wrapper .header h2.animate {
+  animation: fade-in-slide-up-60px 1s cubic-bezier(0.25, 1, 0.5, 1);
+  animation-fill-mode: forwards;
+}
+#featured-projects .testimonial-wrapper .header div {
+  opacity: 0;
+}
+#featured-projects .testimonial-wrapper .header div.animate {
+  animation: fade-in-slide-up-60px 1s cubic-bezier(0.25, 1, 0.5, 1);
+  animation-fill-mode: forwards;
+  animation-delay: 0.3s;
+}
+@keyframes fade-in-slide-up-60px {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 #featured-projects .w-slider {
   position: relative;
