@@ -52,6 +52,20 @@
 }
 #brand-statements .text-images {
   max-width: 112ch;
+  opacity: 0;
+}
+#brand-statements .text-images.animate {
+  animation: fade-in-slide-up-80px 1s ease-out forwards;
+}
+@keyframes fade-in-slide-up-80px {
+  from {
+    opacity: 0;
+    transform: translateY(80px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 #brand-statements .heading-2 {
   font-size: var(--heading--h2);
@@ -60,6 +74,9 @@
 }
 #brand-statements .text-weight-regular {
   font-weight: 400;
+}
+#brand-statements .text-weight-light {
+  font-weight: 300;
 }
 #brand-statements .span {
   text-align: left;
@@ -79,13 +96,11 @@
   text-decoration: none;
   display: inline-block;
   position: relative;
+  width: 0;
+  transition: width 1s ease-in-out;
 }
-#brand-statements .span.three {
-  pointer-events: none;
-  cursor: default;
-  background-image: url("../images/Text-Images-03.jpg");
-  background-size: cover;
-  border-radius: 5rem;
+#brand-statements .span.animate {
+  width: 6rem;
 }
 #brand-statements .span.one {
   pointer-events: none;
@@ -103,6 +118,13 @@
   background-size: cover;
   border-radius: 5rem;
 }
+#brand-statements .span.three {
+  pointer-events: none;
+  cursor: default;
+  background-image: url("../images/Text-Images-03.jpg");
+  background-size: cover;
+  border-radius: 5rem;
+}
 #brand-statements .big-numbers-wrapper {
   grid-column-gap: 10.5rem;
   grid-row-gap: 10.5rem;
@@ -112,6 +134,18 @@
   place-items: center;
   display: flex;
 }
+#brand-statements .big-numbers-wrapper div.animate {
+  animation: fade-in-slide-up-30px 1s ease-out forwards;
+}
+#brand-statements .big-numbers-wrapper :nth-child(1).animate {
+  animation-delay: 0s;
+}
+#brand-statements .big-numbers-wrapper :nth-child(2).animate {
+  animation-delay: 0.3s;
+}
+#brand-statements .big-numbers-wrapper :nth-child(3).animate {
+  animation-delay: 0.6s;
+}
 #brand-statements .big-numbers-card {
   grid-column-gap: 0.3125rem;
   grid-row-gap: 0.3125rem;
@@ -119,6 +153,17 @@
   justify-content: flex-start;
   align-items: flex-start;
   display: flex;
+  opacity: 0;
+}
+@keyframes fade-in-slide-up-30px {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 #brand-statements .big-numbers {
   font-size: 5.3vw;
@@ -230,6 +275,12 @@
   #brand-statements .span.three,
   #brand-statements .span.one,
   #brand-statements .span.two {
+    width: 0;
+    transition: width 1s ease-in-out;
+  }
+  #brand-statements .span.three.animate,
+  #brand-statements .span.one.animate,
+  #brand-statements .span.two.animate {
     width: 4rem;
   }
   #brand-statements .big-numbers-wrapper {
