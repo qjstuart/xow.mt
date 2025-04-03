@@ -905,6 +905,65 @@
             0 33px 20px #00000008,
             0 59px 24px #00000003,
             0 92px 26px #0000;
+
+        .testimonial-slider-content {
+            .testimonial-image,
+            .testimonial-text {
+                opacity: 0;
+            }
+        }
+
+        .slider.fade-in {
+            .testimonial-slider-content .testimonial-image {
+                animation: fade-in-slide-up-100 0.7s
+                    cubic-bezier(0.25, 1, 0.5, 1);
+                animation-fill-mode: forwards;
+
+                @keyframes fade-in-slide-up-100 {
+                    from {
+                        opacity: 0;
+                        transform: translateY(100%);
+                    }
+                    to {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+                }
+            }
+
+            .testimonial-slider-content .testimonial-text {
+                animation: fade-in-slide-up-100 0.7s
+                    cubic-bezier(0.25, 1, 0.5, 1);
+                animation-fill-mode: forwards;
+                animation-delay: 0.3s;
+            }
+        }
+
+        .slider.fade-out {
+            .testimonial-slider-content .testimonial-image {
+                animation: fade-out-slide-up-100 0.7s
+                    cubic-bezier(0.25, 1, 0.5, 1);
+                animation-fill-mode: forwards;
+
+                @keyframes fade-out-slide-up-100 {
+                    from {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+                    to {
+                        opacity: 0;
+                        transform: translateY(-100%);
+                    }
+                }
+            }
+
+            .testimonial-slider-content .testimonial-text {
+                animation: fade-out-slide-up-100 0.7s
+                    cubic-bezier(0.25, 1, 0.5, 1);
+                animation-fill-mode: forwards;
+                animation-delay: 0.3s;
+            }
+        }
     }
 
     .w-slider-mask {

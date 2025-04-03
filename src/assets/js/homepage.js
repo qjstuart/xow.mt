@@ -111,8 +111,12 @@ function animateTestimonialWrapperHeader(testimonialWrapperHeader) {
     }
 }
 
+// Function to initialize all animations
 function initializeAnimations() {
-    observeElement(".hero-header", animateHeroHeader);
+    // Observe elements in #hero section
+    observeElement("#hero .hero-header", animateHeroHeader);
+
+    // Observe elements in #brand-statements section
     observeElement("#brand-statements .text-images", animateTextImages);
     observeElement(
         "#brand-statements .big-numbers-card.one",
@@ -133,6 +137,7 @@ function initializeAnimations() {
     observeElement("#brand-statements .grid .card.two", animateGridCard);
     observeElement("#brand-statements .grid .card.three", animateGridCard);
 
+    // Observe elements in #featured-projects section
     observeElement(
         "#featured-projects .works-wrapper .header",
         animateWorksWrapperHeader,
@@ -152,6 +157,56 @@ function initializeAnimations() {
         animateTestimonialWrapperHeader,
     );
 }
+
+/*-- -------------------------- -->
+<---     Testimonials Slider    -->
+<--- -------------------------- -*/
+// Get testimonials container
+const testimonialSlider = document.querySelector(
+    "#featured-projects .testimonial-slider",
+);
+// Get individual testimonial cards
+const testimonialCards = testimonialSlider.querySelectorAll(
+    ".card-testimonial div.slider",
+);
+// Get previous and next arrows
+const prevArrow = testimonialSlider.querySelector(".slider-arrow-left");
+const nextArrow = testimonialSlider.querySelector(".slider-arrow-right");
+let currentIndex = 0;
+
+// Function to show the current testimonial card
+function showTestimonialCard(index) {
+    testimonialCards.forEach((card, i) => {
+        card.classList.remove("active", "fade-in", "fade-out");
+        if (i === index) {
+            card.classList.add("active", "fade-in");
+        } else {
+            card.classList.add("fade-out");
+        }
+    });
+}
+
+function nextTestimonialCard() {
+    testimonialCards[currentIndex].classList.remove("active");
+    // Use modulus operator tricks to stay within the array range
+    currentIndex = (currentIndex + 1) % testimonialCards.length;
+    showTestimonialCard(currentIndex);
+}
+
+function prevTestimonialCard() {
+    testimonialCards[currentIndex].classList.remove("active");
+    // Use modulus operator tricks to stay within the array range
+    currentIndex =
+        (currentIndex - 1 + testimonialCards.length) % testimonialCards.length;
+    showTestimonialCard(currentIndex);
+}
+
+// Attach event listeners to arrows
+nextArrow.addEventListener("click", nextTestimonialCard);
+prevArrow.addEventListener("click", prevTestimonialCard);
+
+// setInterval(nextTestimonialCard, 5000); // Auto-slide every 5 seconds
+showTestimonialCard(currentIndex); // Immediately show the first testimonial
 
 // Initialize all animations on page load
 document.addEventListener("DOMContentLoaded", initializeAnimations);
