@@ -180,6 +180,7 @@ function showTestimonialCard(index) {
         card.classList.remove("active", "fade-in", "fade-out");
         if (i === index) {
             card.classList.add("active", "fade-in");
+            card.style.transform = `translateX(-${currentIndex * 100}%)`;
         } else {
             card.classList.add("fade-out");
         }
@@ -205,7 +206,7 @@ function prevTestimonialCard() {
 nextArrow.addEventListener("click", nextTestimonialCard);
 prevArrow.addEventListener("click", prevTestimonialCard);
 
-// setInterval(nextTestimonialCard, 5000); // Auto-slide every 5 seconds
+setInterval(nextTestimonialCard, 5000); // Auto-slide every 5 seconds
 showTestimonialCard(currentIndex); // Immediately show the first testimonial
 
 // Initialize all animations on page load
