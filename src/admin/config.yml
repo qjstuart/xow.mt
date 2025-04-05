@@ -30,3 +30,26 @@ collections:
           - { label: "Featured Image", name: "image", widget: "image" }
           - { label: "Image Caption", name: "imageAlt", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
+
+    - name: "portfolio"
+      label: "Portfolio"
+      folder: "src/content/portfolio"
+      create: true
+      slug: "{{slug}}"
+      fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - {
+                label: "URL Slug",
+                name: "url",
+                widget: "string",
+                hint: '^ Specify where the page will be written to. If you use "Demo Project", the post will be accessible from "portfolio/demo-project"',
+            }
+          - { label: "Description", name: "description", widget: "string" }
+          - label: "Tags"
+            name: "tags"
+            widget: "select"
+            multiple: true
+            min: 1
+            max: 4
+            options: ["Animation", "Branding", "Content", "Graphic Design"]
+            # default: ["Design"]
