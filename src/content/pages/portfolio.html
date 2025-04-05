@@ -1,8 +1,8 @@
 ---
-title: 'Portfolio | XOW | Graphic Design & Animation'
-description: 'Description for <meta> description and OG tags'
-preloadImg: '/assets/images/imagename.format'
-permalink: 'portfolio/'
+title: "Portfolio | XOW | Graphic Design & Animation"
+description: "Description for <meta> description and OG tags"
+preloadImg: "/assets/images/imagename.format"
+permalink: "portfolio/"
 eleventyNavigation:
     key: Portfolio
     order: 300
@@ -14,8 +14,31 @@ eleventyNavigation:
 
 {% block head %}
     <!-- Any page-specific tags that belong in the <head>, such as a page-specific stylesheet -->
+    <link rel="stylesheet" href="/assets/css/portfolio.css" />
+    <link rel="stylesheet" href="/assets/css/critical.css" />
+    <!-- ============================================ -->
+    <!--                    LANDING                   -->
+    <!-- ============================================ -->
 {% endblock %}
 
 {% block body %}
     <!-- Page HTML goes here, without a <main> wrapper. The <main> tag is already presented in layouts/base.html -->
+    <section id="hero-section" class="hero-section">
+        <div class="w-layout-blockcontainer container w-container">
+            <div class="hero-works">
+                <div class="works-header">
+                    <div class="tag-wrapper">
+                        <div class="elipse hide-mobile"></div>
+                        <div class="tag">
+                            <p class="text-weight-medium caps">
+                                we are sandbox
+                            </p>
+                        </div>
+                        <div class="elipse hide-mobile"></div>
+                    </div>
+                    <h1 class="heading-1">Where vision meets excellence</h1>
+                </div>
+            </div>
+        </div>
+    </section>
 {% endblock %}
