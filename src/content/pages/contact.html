@@ -16,10 +16,117 @@ eleventyNavigation:
 
 {% block body %}
     <!-- ============================================ -->
+    <!--              CONTACT HERO & FORM             -->
+    <!-- ============================================ -->
+    <section id="hero-form" class="hero-form">
+        <div class="w-layout-blockcontainer container w-container">
+            <div class="hero-header">
+                <div class="tag-wrapper">
+                    <div class="elipse hide-mobile"></div>
+                    <div class="tag">
+                        <p class="text-weight-medium caps">
+                            AVAILABLE FOR WORK
+                        </p>
+                    </div>
+                    <div class="elipse hide-mobile"></div>
+                </div>
+                <div class="heading smaller">
+                    <h1 class="heading-1">Let’s bring your vision to life</h1>
+                </div>
+            </div>
+            <div class="form-component">
+                <div
+                    data-w-id="a51d9b64-bbeb-b439-510d-97f8f4a7d334"
+                    {# style="opacity:0" #}
+                    class="form-wrapper full-width w-form"
+                >
+                    <form
+                        id="email-form"
+                        name="email-form"
+                        data-name="Email Form"
+                        method="get"
+                        class="form"
+                        data-wf-page-id="67c81996b549f268672a1059"
+                        data-wf-element-id="a51d9b64-bbeb-b439-510d-97f8f4a7d335"
+                    >
+                        <div class="form-content">
+                            <div class="name-wrapper-contact">
+                                <label for="name" class="text-size-medium-vw"
+                                    >Name</label
+                                ><input
+                                    class="text-field-contact w-input"
+                                    maxlength="256"
+                                    name="name-2"
+                                    data-name="Name 2"
+                                    placeholder="Enter your name"
+                                    type="text"
+                                    id="name-2"
+                                    required=""
+                                />
+                            </div>
+                            <div class="name-wrapper-contact">
+                                <label
+                                    for="Enter-your-e-mail"
+                                    class="text-size-medium-vw"
+                                    >E-mail</label
+                                ><input
+                                    class="text-field-contact w-input"
+                                    maxlength="256"
+                                    name="Enter-your-e-mail-2"
+                                    data-name="Enter Your E Mail 2"
+                                    placeholder="Enter your e-mail"
+                                    type="email"
+                                    id="Enter-your-e-mail-2"
+                                    required=""
+                                />
+                            </div>
+                            <label for="field" class="text-size-medium-vw"
+                                >Message</label
+                            ><textarea
+                                id="field-2"
+                                name="field-2"
+                                maxlength="5000"
+                                data-name="Field 2"
+                                placeholder="Your message..."
+                                class="text-field-contact w-input"
+                            ></textarea>
+                        </div>
+                        <div class="contact-button align-center">
+                            <div href="#" class="button-primary">
+                                <input
+                                    type="submit"
+                                    data-wait="Please wait..."
+                                    class="submit-button w-button"
+                                    value="Submit"
+                                />
+                                <div class="text-weight-medium caps">
+                                    submit
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="success-message w-form-done">
+                        <div class="text-size-contact">
+                            Thank you! Your submission has been received!
+                        </div>
+                    </div>
+                    <div class="error-message w-form-fail">
+                        <div class="text-size-medium-contact">
+                            Oops! Something went wrong while submitting the
+                            form.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Codestitch HTML below -->
+    <!-- ============================================ -->
     <!--                    LANDING                   -->
     <!-- ============================================ -->
 
-    <section id="int-hero">
+    {# <section id="int-hero">
         <h1 id="home-h">Contact Us</h1>
         <picture>
             <source
@@ -40,13 +147,13 @@ eleventyNavigation:
                 height="1667"
             />
         </picture>
-    </section>
+    </section> #}
 
     <!-- ============================================ -->
     <!--                Contact Form                  -->
     <!-- ============================================ -->
 
-    <section id="cs-contact">
+    {# <section id="cs-contact">
         <div class="cs-container">
             <form id="cs-form" name="Contact Form" method="post">
                 <div class="cs-content">
@@ -153,5 +260,5 @@ eleventyNavigation:
                 </picture>
             </div>
         </div>
-    </section>
+    </section> #}
 {% endblock %}
