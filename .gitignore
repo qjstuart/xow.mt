@@ -10,6 +10,9 @@ _webflow-exported
 # Webflow exported code (using ExFlow)
 _exflow-exported
 
+# Webflow saved pages (CTRL+S from browser)
+_saved-html-pages
+
 # XOW assets
 _xow-assets
 
