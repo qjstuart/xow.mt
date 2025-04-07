@@ -35,9 +35,12 @@ collections:
     - name: "portfolio"
       label: "Portfolio"
       folder: "src/content/portfolio"
+      media_folder: "/src/assets/images/portfolio"
+      public_folder: "/assets/images/portfolio"
       create: true
       slug: "{{slug}}"
       fields:
+          - { label: "Date", name: "date", widget: "datetime" }
           - { label: "Title", name: "title", widget: "string" }
           - {
                 label: "URL Slug",
@@ -46,11 +49,49 @@ collections:
                 hint: '^ Specify where the page will be written to. If you use "Demo Project", the post will be accessible from "portfolio/demo-project"',
             }
           - { label: "Description", name: "description", widget: "string" }
-          - label: "Tags"
-            name: "tags"
-            widget: "select"
-            multiple: true
-            min: 1
-            max: 4
-            options: ["Animation", "Branding", "Content", "Graphic Design"]
-            # default: ["Design"]
+          - {
+                label: "Tags",
+                name: "tags",
+                widget: "select",
+                multiple: true,
+                min: 2,
+                max: 4,
+                options: ["Animation", "Branding", "Content", "Graphic Design"],
+            }
+          - { label: "Hero Image", name: "heroImage", widget: "image" }
+          - {
+                label: "Supporting Image 1",
+                name: "supportingImage1",
+                widget: "image",
+                required: false,
+            }
+          - {
+                label: "Supporting Image 2",
+                name: "supportingImage2",
+                widget: "image",
+                required: false,
+            }
+          - {
+                label: "Supporting Image 3",
+                name: "supportingImage3",
+                widget: "image",
+                required: false,
+            }
+          - {
+                label: "Supporting Image 4",
+                name: "supportingImage4",
+                widget: "image",
+                required: false,
+            }
+          - {
+                label: "Supporting Image 5",
+                name: "supportingImage5",
+                widget: "image",
+                required: false,
+            }
+          - {
+                label: "Supporting Image 6",
+                name: "supportingImage6",
+                widget: "image",
+                required: false,
+            }
