@@ -238,7 +238,7 @@
 #hero-form .button-primary {
   grid-row-gap: 0.25rem;
   background-color: var(--color--button);
-  color: var(--color--backgroung);
+  color: var(--color--background);
   font-size: var(--text-size--medium);
   text-transform: uppercase;
   cursor: pointer;
@@ -282,6 +282,10 @@
 }
 #hero-form .text-size-medium-contact {
   font-size: 1.125rem;
+}
+#hero-form input::placeholder,
+#hero-form textarea::placeholder {
+  font-family: var(--font--made--okine--sans);
 }
 
 /* Screens up to 991px */

@@ -283,7 +283,7 @@
     .button-primary {
         grid-row-gap: 0.25rem;
         background-color: var(--color--button);
-        color: var(--color--backgroung);
+        color: var(--color--background);
         font-size: var(--text-size--medium);
         text-transform: uppercase;
         cursor: pointer;
@@ -333,6 +333,11 @@
 
     .text-size-medium-contact {
         font-size: 1.125rem;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+        font-family: var(--font--made--okine--sans);
     }
 }
 
