@@ -54,16 +54,34 @@ collections:
                 name: "tags",
                 widget: "select",
                 multiple: true,
-                min: 2,
+                min: 1,
                 max: 4,
                 options: ["Animation", "Branding", "Content", "Graphic Design"],
             }
-          - { label: "Hero Image", name: "heroImage", widget: "image" }
+          - {
+                label: "Hero Image",
+                name: "heroImage",
+                widget: "image",
+                required: true,
+            }
+          - {
+                label: "Hero Image Caption",
+                name: "heroImageAlt",
+                widget: "string",
+                hint: "This caption will be used for screen readers.",
+            }
           - {
                 label: "Supporting Image 1",
                 name: "supportingImage1",
                 widget: "image",
                 required: false,
+            }
+          - {
+                label: "Supporting Image 1 Caption",
+                name: "supportingImage1Alt",
+                widget: "string",
+                required: false,
+                hint: "This caption will be used for screen readers.",
             }
           - {
                 label: "Supporting Image 2",
@@ -72,10 +90,24 @@ collections:
                 required: false,
             }
           - {
+                label: "Supporting Image 2 Caption",
+                name: "supportingImage2Alt",
+                widget: "string",
+                required: false,
+                hint: "This caption will be used for screen readers.",
+            }
+          - {
                 label: "Supporting Image 3",
                 name: "supportingImage3",
                 widget: "image",
                 required: false,
+            }
+          - {
+                label: "Supporting Image 3 Caption",
+                name: "supportingImage3Alt",
+                widget: "string",
+                required: false,
+                hint: "This caption will be used for screen readers.",
             }
           - {
                 label: "Supporting Image 4",
@@ -84,14 +116,35 @@ collections:
                 required: false,
             }
           - {
+                label: "Supporting Image 4 Caption",
+                name: "supportingImage4Alt",
+                widget: "string",
+                required: false,
+                hint: "This text will be used for screen readers.",
+            }
+          - {
                 label: "Supporting Image 5",
                 name: "supportingImage5",
                 widget: "image",
                 required: false,
             }
           - {
+                label: "Supporting Image 5 Caption",
+                name: "supportingImage5Alt",
+                widget: "string",
+                required: false,
+                hint: "This text will be used for screen readers.",
+            }
+          - {
                 label: "Supporting Image 6",
                 name: "supportingImage6",
                 widget: "image",
                 required: false,
+            }
+          - {
+                label: "Supporting Image 6 Caption",
+                name: "supportingImage6Alt",
+                widget: "string",
+                required: false,
+                hint: "This caption will be used for screen readers.",
             }
