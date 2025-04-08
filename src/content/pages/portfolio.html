@@ -16,6 +16,9 @@ eleventyNavigation:
     <!-- Any page-specific tags that belong in the <head>, such as a page-specific stylesheet -->
     <link rel="stylesheet" href="/assets/css/portfolio.css" />
     <link rel="stylesheet" href="/assets/css/critical.css" />
+
+    <!-- My scripts -->
+    <script defer src="/assets/js/portfolio.js"></script>
 {% endblock %}
 
 {% block body %}
@@ -47,44 +50,70 @@ eleventyNavigation:
     <!-- ============================================ -->
     <section id="projects">
         <div class="w-layout-blockcontainer container w-container">
+            {# <ul>
+                {% for item in collections.project %}
+                    <li>
+                        <strong>{{ item.inputPath }}</strong><br />
+                        Title: {{ item.data.title or "No title" }}<br />
+                        Tags: {{ item.data.tags | join(", ") }}
+                    </li>
+                {% endfor %}
+            </ul> #}
             <div class="works-wrapper">
                 <div class="collection-list-wrapper w-dyn-list">
-                    <div role="list" class="collection-list w-dyn-items">
-                        <div
-                            data-w-id="6714fa55-0b82-8e19-61a2-7e872287be5a"
-                            role="listitem"
-                            class="works-card w-dyn-item"
-                        >
-                            <a href="#" class="works-link w-inline-block">
-                                <div class="works-image">
-                                    <img
-                                        src="https://d3e54v103j8qbb.cloudfront.net/plugins/Basic/assets/placeholder.60f9b1840c.svg"
-                                        loading="lazy"
-                                        alt=""
-                                        class="image w-dyn-bind-empty"
-                                    />
-                                    <div class="works-hover-follow">
-                                        <div class="font-move">
-                                            <div class="text-weight-medium">
-                                                View Project
+                    {% if collections.project | length == 0 %}
+                        <div class="empty-state w-dyn-empty">
+                            <div>No items found.</div>
+                        </div>
+                    {% else %}
+                        <div role="list" class="collection-list w-dyn-items">
+                            {%- for project in collections.project | reverse -%}
+                                <div
+                                    data-w-id="6714fa55-0b82-8e19-61a2-7e872287be5a"
+                                    role="listitem"
+                                    class="works-card w-dyn-item"
+                                >
+                                    <a
+                                        href="{{ project.url }}"
+                                        class="works-link w-inline-block"
+                                    >
+                                        <div class="works-image">
+                                            <img
+                                                src="{{ project.data.heroImage }}"
+                                                alt="{{ project.data.heroImageAlt }}"
+                                                decoding="async"
+                                                {# class="image w-dyn-bind-empty" #}
+                                                class="image"
+                                            />
+                                            <div class="works-hover-follow">
+                                                <div class="font-move">
+                                                    <div
+                                                        class="text-weight-medium"
+                                                    >
+                                                        View Project
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
+                                        <div class="work-content">
+                                            <div
+                                                {# class="text-weight-medium w-dyn-bind-empty"> #}
+                                                class="text-weight-medium"
+                                            >
+                                                {{ project.data.title }}
+                                            </div>
+                                            <div class="max-width-35ch">
+                                                {# <p class="w-dyn-bind-empty"></p> #}
+                                                <p class="">
+                                                    {{ project.data.description }}
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
-                                <div class="work-content">
-                                    <div
-                                        class="text-weight-medium w-dyn-bind-empty"
-                                    ></div>
-                                    <div class="max-width-35ch">
-                                        <p class="w-dyn-bind-empty"></p>
-                                    </div>
-                                </div>
-                            </a>
+                            {%- endfor -%}
                         </div>
-                    </div>
-                    <div class="empty-state w-dyn-empty">
-                        <div>No items found.</div>
-                    </div>
+                    {% endif %}
                 </div>
             </div>
         </div>
