@@ -1,1 +1,2 @@
-src/content/portfolio/*.js
+// Ignore all 11tydata.js files
+**/*.11tydata.js
