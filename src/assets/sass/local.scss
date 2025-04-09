@@ -62,7 +62,7 @@
 
     .text-images {
         max-width: 112ch;
-        opacity: 0; // hide initially to animate in
+        opacity: 0; // Hide initially to animate in
 
         &.animate {
             animation: fade-in-slide-up-80px 1s cubic-bezier(0.25, 1, 0.5, 1);
@@ -181,7 +181,7 @@
         justify-content: flex-start;
         align-items: flex-start;
         display: flex;
-        opacity: 0; // hide initially to animate in
+        opacity: 0; // Hide initially to animate in
 
         // &.animate {
         //     animation: fade-in-slide-up-30px 1s ease-out forwards;
@@ -231,7 +231,7 @@
         height: 100%;
         padding: 4rem 3.5rem 4.3rem;
         display: flex;
-        opacity: 0; // hide initially to animate in
+        opacity: 0; // Hide initially to animate in
 
         .number {
             transition: opacity 0.5s ease-in-out;
@@ -580,7 +580,7 @@
         display: flex;
 
         .header {
-            opacity: 0; // hide initially to animate in
+            opacity: 0; // Hide initially to animate in
 
             &.animate {
                 animation: fade-in-slide-up-60px 0.8s ease-out forwards;
@@ -621,7 +621,7 @@
 
     .collection-list-wrapper {
         width: 100%;
-        opacity: 0; // hide initially to animate in
+        opacity: 0; // Hide initially to animate in
 
         &.animate {
             animation: fade-in-slide-up-60px 0.8s ease-out forwards;
@@ -723,7 +723,7 @@
         display: flex;
 
         .slide-interaction {
-            opacity: 0; // hide initially to animate in
+            opacity: 0; // Hide initially to animate in
 
             &.animate {
                 animation: fade-in-slide-up-60px 0.8s ease-out forwards;
@@ -761,7 +761,7 @@
         display: grid;
 
         div {
-            opacity: 0; // hide initially to animate in
+            opacity: 0; // Hide initially to animate in
 
             &.animate {
                 animation: fade-in-slide-up-80px 1.5s
@@ -839,7 +839,7 @@
 
         .header {
             h2 {
-                opacity: 0; // hide initially to animate in
+                opacity: 0; // Hide initially to animate in
 
                 &.animate {
                     animation: fade-in-slide-up-60px 1s
@@ -849,7 +849,7 @@
             }
 
             div {
-                opacity: 0; // hide initially to animate in
+                opacity: 0; // Hide initially to animate in
 
                 &.animate {
                     animation: fade-in-slide-up-60px 1s
