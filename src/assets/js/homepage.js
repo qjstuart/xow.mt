@@ -1,25 +1,7 @@
 /* This file contains all JS related to the homepage */
 
-// Reusable function to observe any element with a custom callback function. Intended for animations.
-// Default option is to run callback whenever 20% of the element is within the viewport, then unobserve.
-function observeElement(selector, callback, options = { threshold: 0.2 }) {
-    const element = document.querySelector(selector);
-    if (!element) {
-        console.log(`[!] observeElement(): selector ${selector} not found.`);
-        return;
-    }
-
-    const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-                callback(entry.target);
-                observer.unobserve(entry.target); // Stop observing after animation
-            }
-        });
-    }, options);
-
-    observer.observe(element);
-}
+// Import resuable function for observing any element
+import { observeElement } from "./observe.js";
 
 // Animations for .hero-header
 function animateHeroHeader(heroHeader) {
@@ -121,17 +103,17 @@ function initializeAnimations() {
     observeElement(
         "#brand-statements .big-numbers-card.one",
         animateBigNumbersCard,
-        (options = { threshold: 0.5 }),
+        { threshold: 0.5 },
     );
     observeElement(
         "#brand-statements .big-numbers-card.two",
         animateBigNumbersCard,
-        (options = { threshold: 0.5 }),
+        { threshold: 0.5 },
     );
     observeElement(
         "#brand-statements .big-numbers-card.three",
         animateBigNumbersCard,
-        (options = { threshold: 0.5 }),
+        { threshold: 0.5 },
     );
     observeElement("#brand-statements .grid .card.one", animateGridCard);
     observeElement("#brand-statements .grid .card.two", animateGridCard);
@@ -141,7 +123,7 @@ function initializeAnimations() {
     observeElement(
         "#featured-projects .works-wrapper .header",
         animateWorksWrapperHeader,
-        (options = { threshold: 0.2 }),
+        { threshold: 0.2 },
     );
     observeElement(
         "#featured-projects .collection-list-wrapper",
@@ -158,9 +140,9 @@ function initializeAnimations() {
     );
 }
 
-/*-- -------------------------- -->
-<---     Testimonials Slider    -->
-<--- -------------------------- -*/
+/*-- ------------------------------ -->
+<---       Testimonials Slider      -->
+<--- ------------------------------ -*/
 // Get testimonials container
 const testimonialSlider = document.querySelector(
     "#featured-projects .testimonial-slider",
@@ -208,6 +190,11 @@ prevArrow.addEventListener("click", prevTestimonialCard);
 
 setInterval(nextTestimonialCard, 5000); // Auto-slide every 5 seconds
 showTestimonialCard(currentIndex); // Immediately show the first testimonial
+/*-- ------------------------------ -->
+<---     Testimonials Slider End    -->
+<--- ------------------------------ -*/
+
+// TODO add footer animations
 
 // Initialize all animations on page load
 document.addEventListener("DOMContentLoaded", initializeAnimations);
