@@ -226,7 +226,6 @@
   padding-bottom: 1.6rem;
   padding-left: 1rem;
   font-size: 1rem;
-  transition: all 0.4s;
 }
 #hero-form .text-field-contact:hover {
   color: var(--color--font);
