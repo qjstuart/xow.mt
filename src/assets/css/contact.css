@@ -2,6 +2,16 @@
 /*-- -------------------------- -->
 <---          Contact           -->
 <--- -------------------------- -*/
+@keyframes fade-in-slide-up-80px {
+  from {
+    opacity: 0;
+    transform: translateY(80px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 #hero-form.hero-form {
   padding-top: 15vh;
 }
@@ -135,6 +145,11 @@
   justify-content: center;
   align-items: center;
   display: flex;
+  opacity: 0;
+}
+#hero-form .tag-wrapper.animate {
+  animation: fade-in-slide-up-80px 1s cubic-bezier(0.25, 1, 0.5, 1);
+  animation-fill-mode: forwards;
 }
 #hero-form .elipse {
   background-color: var(--color--primary);
@@ -155,6 +170,12 @@
 }
 #hero-form .heading {
   max-width: 80ch;
+  opacity: 0;
+}
+#hero-form .heading.animate {
+  animation: fade-in-slide-up-80px 1s cubic-bezier(0.25, 1, 0.5, 1);
+  animation-fill-mode: forwards;
+  animation-delay: 0.3s;
 }
 #hero-form .heading.smaller {
   max-width: 60ch;
@@ -366,6 +387,5 @@
     width: 100%;
   }
 }
-/* Codestitch styles below */
 
 /*# sourceMappingURL=contact.css.map */
