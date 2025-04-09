@@ -46,11 +46,17 @@
   text-align: center;
   background-color: #dddddd;
 }
+#hero-form .w-form-done.visible {
+  display: block;
+}
 #hero-form .w-form-fail {
   display: none;
   margin-top: 10px;
   padding: 10px;
   background-color: #ffdede;
+}
+#hero-form .w-form-fail.visible {
+  display: block;
 }
 #hero-form .w-input,
 #hero-form .w-select {

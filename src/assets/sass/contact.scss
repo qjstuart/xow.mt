@@ -53,6 +53,10 @@
         padding: 20px;
         text-align: center;
         background-color: #dddddd;
+
+        &.visible {
+            display: block;
+        }
     }
 
     .w-form-fail {
@@ -60,6 +64,10 @@
         margin-top: 10px;
         padding: 10px;
         background-color: #ffdede;
+
+        &.visible {
+            display: block;
+        }
     }
 
     .w-input,
