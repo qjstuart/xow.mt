@@ -48,7 +48,6 @@ collections:
                 widget: "string",
                 hint: 'Specify the project URL. If you enter "Demo Project", the post will be accessible from "portfolio/demo-project".',
             }
-          - { label: "Description", name: "description", widget: "string" }
           - {
                 label: "Tags",
                 name: "tags",
@@ -71,10 +70,18 @@ collections:
                 hint: "This caption will be used for screen readers.",
             }
           - {
+                label: "Supporting Text 1",
+                name: "supportingText1",
+                widget: "string",
+                hint: "Shown above Supporting Image 1",
+                required: false,
+            }
+          - {
                 label: "Supporting Image 1",
                 name: "supportingImage1",
                 widget: "image",
                 required: false,
+                hint: "Landscape, full-width.",
             }
           - {
                 label: "Supporting Image 1 Caption",
@@ -84,10 +91,18 @@ collections:
                 hint: "This caption will be used for screen readers.",
             }
           - {
+                label: "Supporting Text 2",
+                name: "supportingText2",
+                widget: "string",
+                hint: "Shown above Supporting Image 2",
+                required: false,
+            }
+          - {
                 label: "Supporting Image 2",
                 name: "supportingImage2",
                 widget: "image",
                 required: false,
+                hint: "Landscape, full-width.",
             }
           - {
                 label: "Supporting Image 2 Caption",
@@ -97,10 +112,18 @@ collections:
                 hint: "This caption will be used for screen readers.",
             }
           - {
+                label: "Supporting Text 3",
+                name: "supportingText3",
+                widget: "string",
+                hint: "Shown above Supporting Image 3",
+                required: false,
+            }
+          - {
                 label: "Supporting Image 3",
                 name: "supportingImage3",
                 widget: "image",
                 required: false,
+                hint: "Landscape, full-width.",
             }
           - {
                 label: "Supporting Image 3 Caption",
@@ -110,36 +133,60 @@ collections:
                 hint: "This caption will be used for screen readers.",
             }
           - {
+                label: "Supporting Text 4",
+                name: "supportingText4",
+                widget: "string",
+                hint: "Shown above Supporting Image 4",
+                required: false,
+            }
+          - {
                 label: "Supporting Image 4",
                 name: "supportingImage4",
                 widget: "image",
                 required: false,
+                hint: "Portrait, left-aligned.",
             }
           - {
                 label: "Supporting Image 4 Caption",
                 name: "supportingImage4Alt",
                 widget: "string",
                 required: false,
-                hint: "This text will be used for screen readers.",
+                hint: "This caption will be used for screen readers.",
+            }
+          - {
+                label: "Supporting Text 5",
+                name: "supportingText5",
+                widget: "string",
+                hint: "Shown above Supporting Image 5",
+                required: false,
             }
           - {
                 label: "Supporting Image 5",
                 name: "supportingImage5",
                 widget: "image",
                 required: false,
+                hint: "Portrait, right-aligned.",
             }
           - {
                 label: "Supporting Image 5 Caption",
                 name: "supportingImage5Alt",
                 widget: "string",
                 required: false,
-                hint: "This text will be used for screen readers.",
+                hint: "This caption will be used for screen readers.",
+            }
+          - {
+                label: "Supporting Text 6",
+                name: "supportingText6",
+                widget: "string",
+                hint: "Shown above Supporting Image 6",
+                required: false,
             }
           - {
                 label: "Supporting Image 6",
                 name: "supportingImage6",
                 widget: "image",
                 required: false,
+                hint: "Landscape, full-width.",
             }
           - {
                 label: "Supporting Image 6 Caption",
