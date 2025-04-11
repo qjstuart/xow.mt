@@ -11,7 +11,7 @@
         align-items: center;
         width: 100%;
         height: 100vh;
-        padding-top: 15vh;
+        padding-top: 12vh;
         padding-bottom: 4rem;
         display: flex;
         position: relative;
@@ -422,6 +422,10 @@
             max-width: none;
         }
 
+        .hero-wrapper {
+            padding-top: 8vh;
+        }
+
         .image {
             object-position: 50% 20%;
         }
@@ -488,7 +492,7 @@
 <--- -------------------------- -*/
 #hero-section {
     &.hero-section {
-        padding-top: 15vh;
+        padding-top: 12vh;
         padding-bottom: 6rem;
     }
 
@@ -623,6 +627,10 @@
     #hero-section {
         .w-layout-blockcontainer {
             max-width: none;
+        }
+
+        &.hero-section {
+            padding-top: 8vh;
         }
 
         .heading-1 {
