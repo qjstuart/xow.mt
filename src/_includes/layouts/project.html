@@ -35,6 +35,10 @@
     <!-- prettier-ignore-end -->
 {% endblock %}
 
+<!-- Tags listed here are system-generated which we do not -->
+<!--wish to display on-screen or filter by -->
+{% set excludedTags = ["project", "sitemap"] %}
+
 {% block body %}
     <!-- ============================================ -->
     <!--         Landing (Project Date + Title)       -->
@@ -42,18 +46,26 @@
     <section id="hero-section-works" class="hero-section-works">
         <div class="w-layout-blockcontainer container w-container">
             <div class="hero-header">
+                <!-- Date Published -->
                 <div class="tag-wrapper">
-                    <div class="elipse hide-mobile"></div>
-                    <div class="tag vertical-mobile">
-                        <p class="text-weight-medium caps">Published -</p>
-                        <p class="text-weight-medium caps">
-                            {{ date | postDate }}
-                        </p>
-                    </div>
-                    <div class="elipse hide-mobile"></div>
+                    <p class="text-weight-medium caps">{{ date | postDate }}</p>
                 </div>
+
+                <!-- Project Title -->
                 <div class="heading">
                     <h1 class="heading-1">{{ title }}</h1>
+                </div>
+
+                <!-- Project Tags -->
+                <div class="tag-wrapper flex-wrap">
+                    {%- for tag in tags -%}
+                        {%- if tag not in excludedTags -%}
+                            <div class="project-tag">
+                                <div class="elipse"></div>
+                                <p class="text-weight-regular">{{ tag }}</p>
+                            </div>
+                        {%- endif -%}
+                    {% endfor %}
                 </div>
             </div>
         </div>
