@@ -33,6 +33,9 @@
         }
     </script>
     <!-- prettier-ignore-end -->
+
+    <!-- My scripts -->
+    <script defer type="module" src="/assets/js/project.js"></script>
 {% endblock %}
 
 <!-- Tags listed here are system-generated which we do not -->
@@ -40,9 +43,9 @@
 {% set excludedTags = ["project", "sitemap"] %}
 
 {% block body %}
-    <!-- ============================================ -->
-    <!--         Landing (Project Date + Title)       -->
-    <!-- ============================================ -->
+    <!-- ============================================== -->
+    <!--      Landing (Project Date + Title + Tags)     -->
+    <!-- ============================================== -->
     <section id="hero-section-works" class="hero-section-works">
         <div class="w-layout-blockcontainer container w-container">
             <div class="hero-header">
@@ -83,14 +86,14 @@
                 class="blog-image-wrapper"
             >
                 <img
-                    style="-webkit-transform:translate3d(0, 0, 0) scale3d(1.2, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1.2, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1.2, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1.2, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                    {# style="-webkit-transform:translate3d(0, 0, 0) scale3d(1.2, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1.2, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1.2, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1.2, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" #}
                     alt="{{ heroImageAlt }}"
                     src="{{ heroImage }}"
                     loading="lazy"
                     {# class="image w-dyn-bind-empty" #}
                     class="image"
                 />
-                <div style="height:100%" class="mask-frame"></div>
+                <div class="mask-frame"></div>
             </div>
         </div>
     </section>
