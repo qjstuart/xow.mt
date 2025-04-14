@@ -156,13 +156,35 @@ const prevArrow = testimonialSlider.querySelector(".slider-arrow-left");
 const nextArrow = testimonialSlider.querySelector(".slider-arrow-right");
 let currentIndex = 0;
 
+// Based on the screen width, we need to
+// transform the cards by slighty different offsets.
+function getOffset() {
+    // Get current screen width
+    const screenWidth = window.innerWidth;
+    let offset = 0;
+
+    // Mobile
+    if (screenWidth < 480) {
+        offset = 1;
+    }
+    // Tablet
+    else if (screenWidth > 480 && screenWidth < 768) {
+        offset = 0.6;
+    }
+    // Desktop
+    else if (screenWidth >= 768) {
+        offset = 0.4;
+    }
+    return offset;
+}
+
 // Function to show the current testimonial card
 function showTestimonialCard(index) {
     testimonialCards.forEach((card, i) => {
         card.classList.remove("active", "fade-in", "fade-out");
         if (i === index) {
             card.classList.add("active", "fade-in");
-            card.style.transform = `translateX(-${currentIndex * 100}%)`;
+            card.style.transform = `translateX(-${currentIndex * (100 + getOffset())}%)`;
         } else {
             card.classList.add("fade-out");
         }
@@ -188,7 +210,7 @@ function prevTestimonialCard() {
 nextArrow.addEventListener("click", nextTestimonialCard);
 prevArrow.addEventListener("click", prevTestimonialCard);
 
-setInterval(nextTestimonialCard, 5000); // Auto-slide every 5 seconds
+setInterval(nextTestimonialCard, 1000); // Auto-slide every 5 seconds
 showTestimonialCard(currentIndex); // Immediately show the first testimonial
 /*-- ------------------------------ -->
 <---     Testimonials Slider End    -->
