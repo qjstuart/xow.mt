@@ -1,7 +1,7 @@
 /* This file contains all JS related to the project details page (portfolio/project-name/) */
 
 // Import resuable function for observing any element
-import { observeElement } from "./observe.js";
+import { observeElement } from "./util.js";
 
 // Animations for all .mask-frame elements
 function animateBlogImageWrapper(blogImageWrapper) {

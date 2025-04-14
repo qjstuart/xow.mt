@@ -1,7 +1,7 @@
 /* This file contains all JS related to the homepage */
 
 // Import resuable function for observing any element
-import { observeElement } from "./observe.js";
+import { observeElement } from "./util.js";
 
 // Animations for .hero-header
 function animateHeroHeader(heroHeader) {
