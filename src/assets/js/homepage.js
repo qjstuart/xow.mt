@@ -210,7 +210,7 @@ function prevTestimonialCard() {
 nextArrow.addEventListener("click", nextTestimonialCard);
 prevArrow.addEventListener("click", prevTestimonialCard);
 
-setInterval(nextTestimonialCard, 1000); // Auto-slide every 5 seconds
+setInterval(nextTestimonialCard, 5000); // Auto-slide every 5 seconds
 showTestimonialCard(currentIndex); // Immediately show the first testimonial
 /*-- ------------------------------ -->
 <---     Testimonials Slider End    -->
