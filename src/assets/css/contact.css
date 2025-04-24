@@ -158,7 +158,7 @@
   animation-fill-mode: forwards;
 }
 #hero-form .elipse {
-  background-color: var(--color--primary);
+  background-color: var(--color--red);
   border-radius: 50%;
   width: 0.4rem;
   height: 0.4rem;
@@ -278,7 +278,7 @@
   overflow: hidden;
 }
 #hero-form .button-primary:hover {
-  background-color: var(--color--primary);
+  background-color: var(--color--yellow);
 }
 #hero-form .submit-button {
   z-index: 3;

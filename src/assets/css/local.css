@@ -260,7 +260,7 @@
   overflow: hidden;
 }
 #brand-statements .button-primary:hover {
-  background-color: var(--color--primary);
+  background-color: var(--color--yellow);
 }
 #brand-statements .w-inline-block {
   max-width: 100%;
@@ -853,7 +853,7 @@
   display: flex;
 }
 #featured-projects .slider-arrow-left:hover {
-  background-color: var(--color--primary);
+  background-color: var(--color--yellow);
 }
 #featured-projects .slider-arrow-right {
   border: 1px solid #ddd;
@@ -868,7 +868,7 @@
   display: flex;
 }
 #featured-projects .slider-arrow-right:hover {
-  background-color: var(--color--primary);
+  background-color: var(--color--yellow);
 }
 #featured-projects .display-none {
   display: none;

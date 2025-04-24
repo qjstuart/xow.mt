@@ -185,7 +185,7 @@
     }
 
     .elipse {
-        background-color: var(--color--primary);
+        background-color: var(--color--red);
         border-radius: 50%;
         width: 0.4rem;
         height: 0.4rem;
@@ -328,7 +328,7 @@
         overflow: hidden;
 
         &:hover {
-            background-color: var(--color--primary);
+            background-color: var(--color--yellow);
         }
     }
 

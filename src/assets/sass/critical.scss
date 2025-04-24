@@ -98,14 +98,14 @@
     }
 
     .elipse {
-        background-color: var(--color--primary);
+        background-color: var(--color--blue);
         border-radius: 50%;
         width: 0.4rem;
         height: 0.4rem;
     }
 
     .big-elipse {
-        background-color: var(--color--primary);
+        background-color: var(--color--blue);
         border-radius: 50%;
         width: 1rem;
         height: 1rem;
@@ -141,7 +141,7 @@
 
     .hero-card.second {
         z-index: 2;
-        background-color: var(--color--primary);
+        background-color: var(--color--yellow);
         transform: rotate(-0.463deg);
     }
 
@@ -563,7 +563,7 @@
     }
 
     .elipse {
-        background-color: var(--color--primary);
+        background-color: var(--color--blue);
         border-radius: 50%;
         width: 0.4rem;
         height: 0.4rem;

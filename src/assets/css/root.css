@@ -6,6 +6,9 @@
 @media only screen and (min-width: 0rem) {
   :root {
     --color--primary: #ee64ff;
+    --color--red: #f83821;
+    --color--yellow: #fbc400;
+    --color--blue: #4554ff;
     --color--background: #efefef;
     --color--font: #151515;
     --color--button: #151515;

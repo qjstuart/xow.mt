@@ -329,7 +329,7 @@
     }
 
     .elipse {
-        background-color: var(--color--primary);
+        background-color: var(--color--yellow);
         border-radius: 50%;
         width: 0.4rem;
         height: 0.4rem;
@@ -533,7 +533,7 @@
 
     .mask-frame {
         z-index: 2;
-        background-color: var(--color--primary);
+        background-color: var(--color--yellow);
         opacity: 1;
         position: absolute;
         inset: auto 0% 0%;
@@ -669,7 +669,7 @@
 
     .mask-frame {
         z-index: 2;
-        background-color: var(--color--primary);
+        background-color: var(--color--yellow);
         opacity: 1;
         position: absolute;
         inset: auto 0% 0%;
