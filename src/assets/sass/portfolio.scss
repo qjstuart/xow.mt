@@ -676,7 +676,6 @@
     }
 
     &.content-section {
-        padding-top: 12rem;
         padding-bottom: 2.5rem;
     }
 
@@ -734,8 +733,8 @@
     .work-template-images {
         width: 100%;
         height: 60vh;
-        margin-top: 4rem;
-        margin-bottom: 4rem;
+        // margin-top: 4rem;
+        // margin-bottom: 4rem;
         position: relative;
         overflow: hidden;
 
@@ -759,6 +758,14 @@
         &.no-margin {
             margin-bottom: 0;
         }
+    }
+
+    .rounded-top {
+        border-radius: 1.5rem 1.5rem 0 0;
+    }
+
+    .rounded-bottom {
+        border-radius: 0 0 1.5rem 1.5rem;
     }
 }
 
@@ -784,10 +791,6 @@
             z-index: 4;
         }
 
-        &.content-section {
-            padding-top: 8rem;
-        }
-
         .work-template-images {
             &.vertical {
                 margin-bottom: 6rem;
@@ -805,10 +808,6 @@
 
         .image {
             object-position: 50% 20%;
-        }
-
-        &.content-section {
-            padding-top: 4rem;
         }
 
         .work-template-images {

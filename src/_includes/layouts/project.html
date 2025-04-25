@@ -77,7 +77,7 @@
     <!-- ============================================ -->
     <!--               Project Hero Image             -->
     <!-- ============================================ -->
-    <section id="project-hero-image">
+    <!-- <section id="project-hero-image">
         <div
             class="w-layout-blockcontainer container container-large w-container"
         >
@@ -96,7 +96,7 @@
                 <div class="mask-frame"></div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- ============================================ -->
     <!--                Project Content               -->
@@ -105,143 +105,117 @@
         <div
             class="w-layout-blockcontainer container container-small w-container"
         >
-            {% if supportingText1 %}
-                <!-- Supporting Text 1 -->
-                <div class="work-content-cms">
-                    <div
-                        {# Omitted styles for class "w-richtext" #}
-                        class="rich-text rich-text-size w-richtext"
-                    >
-                        {{ supportingText1 }}
-                    </div>
+            {% if topImage %}
+                <!-- Supporting Image 1 (landscape, full-width) -->
+                <div class="work-template-images rounded-top">
+                    <img
+                        alt="{{ topImageAlt }}"
+                        loading="lazy"
+                        src="{{ topImage }}"
+                        class="image"
+                    />
+                    <div class="mask-frame"></div>
                 </div>
             {% endif %}
 
-            {% if supportingImage1 %}
-                <!-- Supporting Image 1 (landscape, full-width) -->
+            {% if image2 %}
+                <!-- Supporting Image 2 (landscape, full-width) -->
                 <div class="work-template-images">
                     <img
-                        alt="{{ supportingImage1Alt }}"
+                        alt="{{ image2Alt }}"
                         loading="lazy"
-                        src="{{ supportingImage1 }}"
+                        src="{{ image2 }}"
                         class="image"
                     />
                     <div class="mask-frame"></div>
                 </div>
             {% endif %}
 
-            {% if supportingText2 %}
-                <!-- Supporting Text 2 -->
-                <div class="work-content-cms">
-                    <div
-                        {# Omitted styles for class "w-richtext" #}
-                        class="rich-text rich-text-size w-richtext"
-                    >
-                        {{ supportingText2 }}
-                    </div>
-                </div>
-            {% endif %}
-
-            {% if supportingImage2 %}
-                <!-- Supporting Image 2 (landscape, full-width) -->
-                <div class="work-template-images margin-bottom">
-                    <img
-                        alt="{{ supportingImage2Alt }}"
-                        loading="lazy"
-                        src="{{ supportingImage2 }}"
-                        {# class="image w-dyn-bind-empty" #}
-                        class="image"
-                    />
-                    <div class="mask-frame"></div>
-                </div>
-            {% endif %}
-
-            {% if supportingText3 %}
-                <!-- Supporting Text 3 -->
-                <div class="work-content-cms">
-                    <div class="rich-text rich-text-size w-richtext">
-                        {{ supportingText3 }}
-                    </div>
-                </div>
-            {% endif %}
-
-            {% if supportingImage3 %}
+            {% if image3 %}
                 <!-- Supporting Image 3 (landscape, full-width) -->
-                <div class="work-template-images margin-bottom">
+                <div class="work-template-images">
                     <img
-                        alt="{{ supportingImage3Alt }}"
+                        alt="{{ image3Alt }}"
                         loading="lazy"
-                        src="{{ supportingImage3 }}"
-                        {# class="image w-dyn-bind-empty" #}
+                        src="{{ image3 }}"
                         class="image"
                     />
                     <div class="mask-frame"></div>
                 </div>
             {% endif %}
 
-            {% if supportingText4 %}
-                <!-- Supporting Text 4 -->
-                <div class="work-content-cms">
-                    <div class="rich-text rich-text-size w-richtext">
-                        {{ supportingText4 }}
-                    </div>
-                </div>
-            {% endif %}
-
-            {% if supportingImage4 %}
-                <!-- Supporting Image 4 (portrait, left-aligned) -->
-                <div class="work-template-images vertical">
+            {% if image4 %}
+                <!-- Supporting Image 4 (landscape, full-width) -->
+                <div class="work-template-images">
                     <img
-                        alt="{{ supportingImage4Alt }}"
+                        alt="{{ image4Alt }}"
                         loading="lazy"
-                        src="{{ supportingImage4 }}"
-                        {# class="image w-dyn-bind-empty" #}
+                        src="{{ image4 }}"
                         class="image"
                     />
                     <div class="mask-frame"></div>
                 </div>
             {% endif %}
 
-            {% if supportingText5 %}
-                <!-- Supporting Text 5 -->
-                <div class="work-content-cms">
-                    <div class="rich-text rich-text-size w-richtext">
-                        {{ supportingText5 }}
-                    </div>
-                </div>
-            {% endif %}
-
-            {% if supportingImage5 %}
-                <!-- Supporting Image 5 (portrait, right-aligned) -->
-                <div class="work-template-images vertical right">
+            {% if image5 %}
+                <!-- Supporting Image 5 (landscape, full-width) -->
+                <div class="work-template-images">
                     <img
-                        alt="{{ supportingImage5Alt }}"
+                        alt="{{ image5Alt }}"
                         loading="lazy"
-                        src="{{ supportingImage5 }}"
-                        {# class="image w-dyn-bind-empty" #}
+                        src="{{ image5 }}"
                         class="image"
                     />
                     <div class="mask-frame"></div>
                 </div>
             {% endif %}
 
-            {% if supportingText6 %}
-                <!-- Supporting Text 6 -->
-                <div class="work-content-cms">
-                    <div class="rich-text rich-text-size w-richtext">
-                        {{ supportingText6 }}
-                    </div>
-                </div>
-            {% endif %}
-
-            {% if supportingImage6 %}
+            {% if image6 %}
                 <!-- Supporting Image 6 (landscape, full-width) -->
-                <div class="work-template-images no-margin">
+                <div class="work-template-images">
                     <img
-                        alt="{{ supportingImage6Alt }}"
+                        alt="{{ image6Alt }}"
                         loading="lazy"
-                        src="{{ supportingImage6 }}"
-                        {# class="image w-dyn-bind-empty" #}
+                        src="{{ image6 }}"
+                        class="image"
+                    />
+                    <div class="mask-frame"></div>
+                </div>
+            {% endif %}
+
+            {% if image7 %}
+                <!-- Supporting Image 7 (landscape, full-width) -->
+                <div class="work-template-images">
+                    <img
+                        alt="{{ image7Alt }}"
+                        loading="lazy"
+                        src="{{ image7 }}"
+                        class="image"
+                    />
+                    <div class="mask-frame"></div>
+                </div>
+            {% endif %}
+
+            {% if image8 %}
+                <!-- Supporting Image 8 (landscape, full-width) -->
+                <div class="work-template-images">
+                    <img
+                        alt="{{ image8Alt }}"
+                        loading="lazy"
+                        src="{{ image8 }}"
+                        class="image"
+                    />
+                    <div class="mask-frame"></div>
+                </div>
+            {% endif %}
+
+            {% if bottomImage %}
+                <!-- Bottom Image (landscape, full-width) -->
+                <div class="work-template-images rounded-bottom">
+                    <img
+                        alt="{{ bottomImageAlt }}"
+                        loading="lazy"
+                        src="{{ bottomImage }}"
                         class="image"
                     />
                     <div class="mask-frame"></div>

@@ -42,6 +42,7 @@ collections:
       fields:
           - { label: "Date", name: "date", widget: "datetime" }
           - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "string" }
           - {
                 label: "URL Slug",
                 name: "url",
@@ -70,127 +71,99 @@ collections:
                 hint: "This caption will be used for screen readers.",
             }
           - {
-                label: "Supporting Text 1",
-                name: "supportingText1",
-                widget: "string",
-                hint: "Shown above Supporting Image 1",
-                required: false,
-            }
-          - {
-                label: "Supporting Image 1",
-                name: "supportingImage1",
+                label: "Top Image",
+                name: "topImage",
                 widget: "image",
                 required: false,
                 hint: "Landscape, full-width.",
             }
           - {
-                label: "Supporting Image 1 Caption",
-                name: "supportingImage1Alt",
+                label: "Top Image Caption",
+                name: "topImageAlt",
                 widget: "string",
                 required: false,
                 hint: "This caption will be used for screen readers.",
             }
           - {
-                label: "Supporting Text 2",
-                name: "supportingText2",
-                widget: "string",
-                hint: "Shown above Supporting Image 2",
-                required: false,
-            }
-          - {
-                label: "Supporting Image 2",
-                name: "supportingImage2",
+                label: "Image 2",
+                name: "image2",
                 widget: "image",
                 required: false,
                 hint: "Landscape, full-width.",
             }
           - {
-                label: "Supporting Image 2 Caption",
-                name: "supportingImage2Alt",
+                label: "Image 2 Caption",
+                name: "image2Alt",
                 widget: "string",
                 required: false,
                 hint: "This caption will be used for screen readers.",
             }
           - {
-                label: "Supporting Text 3",
-                name: "supportingText3",
-                widget: "string",
-                hint: "Shown above Supporting Image 3",
-                required: false,
-            }
-          - {
-                label: "Supporting Image 3",
-                name: "supportingImage3",
+                label: "Image 3",
+                name: "image3",
                 widget: "image",
                 required: false,
                 hint: "Landscape, full-width.",
             }
           - {
-                label: "Supporting Image 3 Caption",
-                name: "supportingImage3Alt",
+                label: "Image 3 Caption",
+                name: "image3Alt",
                 widget: "string",
                 required: false,
                 hint: "This caption will be used for screen readers.",
             }
           - {
-                label: "Supporting Text 4",
-                name: "supportingText4",
-                widget: "string",
-                hint: "Shown above Supporting Image 4",
-                required: false,
-            }
-          - {
-                label: "Supporting Image 4",
-                name: "supportingImage4",
+                label: "Image 4",
+                name: "image4",
                 widget: "image",
                 required: false,
                 hint: "Portrait, left-aligned.",
             }
           - {
-                label: "Supporting Image 4 Caption",
-                name: "supportingImage4Alt",
+                label: "Image 4 Caption",
+                name: "image4Alt",
                 widget: "string",
                 required: false,
                 hint: "This caption will be used for screen readers.",
             }
           - {
-                label: "Supporting Text 5",
-                name: "supportingText5",
-                widget: "string",
-                hint: "Shown above Supporting Image 5",
-                required: false,
-            }
-          - {
-                label: "Supporting Image 5",
-                name: "supportingImage5",
+                label: "Image 5",
+                name: "image5",
                 widget: "image",
                 required: false,
                 hint: "Portrait, right-aligned.",
             }
           - {
-                label: "Supporting Image 5 Caption",
-                name: "supportingImage5Alt",
+                label: "Image 5 Caption",
+                name: "image5Alt",
                 widget: "string",
                 required: false,
                 hint: "This caption will be used for screen readers.",
             }
           - {
-                label: "Supporting Text 6",
-                name: "supportingText6",
-                widget: "string",
-                hint: "Shown above Supporting Image 6",
-                required: false,
-            }
-          - {
-                label: "Supporting Image 6",
-                name: "supportingImage6",
+                label: "Image 6",
+                name: "image6",
                 widget: "image",
                 required: false,
                 hint: "Landscape, full-width.",
             }
           - {
-                label: "Supporting Image 6 Caption",
-                name: "supportingImage6Alt",
+                label: "Image 6 Caption",
+                name: "image6Alt",
+                widget: "string",
+                required: false,
+                hint: "This caption will be used for screen readers.",
+            }
+          - {
+                label: "Bottom Image",
+                name: "bottomImage",
+                widget: "image",
+                required: false,
+                hint: "Landscape, full-width.",
+            }
+          - {
+                label: "Bottom Image Caption",
+                name: "bottomImageAlt",
                 widget: "string",
                 required: false,
                 hint: "This caption will be used for screen readers.",
