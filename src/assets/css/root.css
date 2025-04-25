@@ -714,7 +714,7 @@
     content: "";
     opacity: 1;
     display: block;
-    background: var(--color--primary);
+    background: var(--color--yellow);
     height: 2px;
     width: 0%;
     transition: width 0.3s;
